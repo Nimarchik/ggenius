@@ -45,7 +45,7 @@ const Footer = () => {
               </h6> */}
             </li>
             <li className={style.navListItem}>
-              <Link to={`${lang}/home`} className={currentPath.endsWith('/home') ? style.navListItemLinkActive : style.navListItemLink}>
+              <Link to={`/${lang}/Home`} className={currentPath.endsWith('/Home') ? style.navListItemLinkActive : style.navListItemLink}>
                 {t('home')}
               </Link>
             </li>

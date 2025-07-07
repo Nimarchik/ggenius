@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './Page/App.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router'
 import { HelmetProvider } from 'react-helmet-async';
 
 
@@ -13,28 +13,35 @@ import PreviewHeroes from './Page/PreviewHeroes.jsx'
 
 const router = createBrowserRouter([
   {
-    path: '',
+    path: '/',
+    element: <Navigate to="/uk/Home" replace />
+  },
+  {
+    path: '/:l',
     element: <App />,
     children: [
       {
-        path: '/:l/Home',
+        path: 'Home',
         element: <Home />
       },
       {
-        path: '/:l/Heroes',
+        path: 'Heroes',
         element: <Heroes />
       },
       {
-        path: '/:l/About',
+        path: 'About',
         element: <About />
       },
       {
-        path: '/:l/PreviewHeroes/:id',
+        path: 'PreviewHeroes/:id',
         element: <PreviewHeroes />
       }
     ]
   }
-])
+],
+  {
+    basename: '/ggenius'
+  })
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

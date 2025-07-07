@@ -23,6 +23,9 @@ function App() {
     }
   }, [lang, i18n, location.pathname]); // важно!
 
+  useEffect(() => {
+    window.scroll(0, 0)
+  })
 
   Aos.init()
 

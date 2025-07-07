@@ -52,7 +52,7 @@ const Header = () => {
     <header className={style.header}>
       <div className={style.container}>
         <nav className={style.nav}>
-          <Link to={`${lang}/home`} className={style.navLogo}>
+          <Link to={`/${lang}/Home`} className={style.navLogo}>
             <svg className={style.logoSvg} xmlns="http:;//www.w3.org/2000/svg" width="326" height="99" viewBox="0 0 326 99">
               <text id="GGenius" xmlSpace="preserve" x="3.148438" y="77" fontFamily="Arial" fontSize="80" fill="gold">GGenius</text>
             </svg>
@@ -61,7 +61,7 @@ const Header = () => {
           <div className={!menu ? style.navLinksListActive : style.navLinksList}>
             <ul className={style.navList}>
               <li className={style.navListItem}>
-                <Link to={`${lang}/home`} onClick={() => setMenu(!menu)} className={currentPath.endsWith('/home') ? style.navListItemLinkActive : style.navListItemLink}>
+                <Link to={`/${lang}/Home`} onClick={() => setMenu(!menu)} className={currentPath.endsWith('/Home') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('home')}
                 </Link>
               </li>
