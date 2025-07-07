@@ -38,10 +38,7 @@ const router = createBrowserRouter([
       }
     ]
   }
-],
-  {
-    basename: '/ggenius'
-  })
+])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
