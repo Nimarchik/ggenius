@@ -1,0 +1,143 @@
+.heroes {
+  padding: 180px 0 90px;
+}
+
+.heroesWrapperCont {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.heroesWrapperTitle {
+  font-family: $sansation;
+  font-size: 80px;
+  text-align: center;
+  color: $colorGold;
+}
+
+.heroesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.heroesListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 250px;
+  padding: 30px 10px;
+  border-radius: 5px;
+  transition: all 0.4s;
+
+  &:hover {
+    border: 1px solid $colorGold;
+    box-shadow: 0 0 10px $colorGold;
+    transition: all 0.4s;
+  }
+}
+
+.heroesListItemCont {
+  text-align: center;
+}
+
+.heroesListItemContRole {
+  margin-bottom: 10px;
+}
+
+.heroesListItemTitle {
+  font-size: 20px;
+  text-align: center;
+  color: $colorGold;
+}
+
+.heroesListItemImg {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+.heroesWrapperBody {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroesWrapperBodyFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.heroesWrapperBodyFilterTitle {
+  font-size: 35px;
+  font-family: $sansation;
+  color: $colorGold;
+}
+
+.heroesWrapperBodyFilterLable {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: $colorGold;
+  transition: all 0.4s;
+
+  
+
+  &::before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid $colorGold;
+
+    transition: all 0.4s;
+    
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 31px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.4s;
+
+    &:checked {
+      background-color: $colorGold;
+      box-shadow: 0 0 20px $colorGold;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.heroesWrapperBodyFilterLableSvg {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 3px;
+  fill: $background;
+  z-index: 3;
+}
+
+.heroesWrapperBodyFilterLableSun {
+  color: $color;
+  transition: all .4s;
+
+}
+
+.heroesWrapperBodyFilterLableSunActive {
+  color: $colorGold;
+  transition: all .4s;
+}
+

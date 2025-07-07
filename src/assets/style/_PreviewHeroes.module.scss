@@ -1,0 +1,152 @@
+.loading {
+  background-color: $background;
+  width: 100%;
+  height: 100vh;
+}
+
+.spin {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 5px solid $color;
+  border-bottom-color: $colorGold;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.preview {
+  padding: 180px 0;
+}
+
+.previewWrapperContImg {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px $colorGold;
+  margin-bottom: 20px;
+}
+
+.previewWrapperCont {
+  display: flex;
+  // justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+
+.previewWrapperContInner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.previewWrapperContInnerGoupsImg {
+  // transform: rotate(120deg);
+  width: 40px;
+  height: 40px;
+}
+
+.previewWrapperTitle {
+  font-family: $sansation;
+  font-size: 50px;
+  color: $colorGold;
+}
+
+.previewWrapperSkillsTitle {
+  font-family: $sansation;
+  text-align: center;
+  font-size: 80px;
+  color: $colorGold;
+  margin-bottom: 70px;
+}
+
+.previewWrapperContList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.previewWrapperContListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 50px;
+  width: 100%;
+  height: 350px;
+  overflow-x: auto;
+
+  span {
+    text-align: center;
+  }
+}
+
+.previewWrapperContListItemCont {
+  width: 250px;
+}
+
+.previewWrapperContListItemImg {
+  width: 100px;
+  height: 100px;
+}
+
+.previewWrapperContListItemContTitle {
+  color: $colorGold;
+  opacity: 0.6;
+}
+
+.previewWrapperContListItemSubs {
+  width: 800px;
+}
+
+.previewWrapperContInf {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+
+
+.previewWrapperContInf2Title,
+.previewWrapperContInf1Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: $colorGold;
+  font-size: 45px;
+}
+
+.previewWrapperContInf3SubMag {
+  color: #1e90ff;
+}
+
+.previewWrapperContInf3SubFiz {
+  color: #a52a2a;
+}
+
+.inputHidden {
+  display: none;
+}
+
+.spanss {
+  color: red;
+}

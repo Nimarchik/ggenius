@@ -1,0 +1,177 @@
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 912px) {
+  .aboutWrapperCont {
+    width: 100%;
+  }
+
+  .aboutWrapperContTitle {
+    font-size: 48px;
+  }
+
+  .aboutContWrapper {
+    flex-direction: column;
+  }
+
+  .aboutContWrapperCont {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .missionWrapperGtoupsPla,
+  .missionWrapperGtoupsMis {
+    flex-direction: column-reverse;
+  }
+
+  .missionWrapperGtoupsPlaCont,
+  .missionWrapperGtoupsMisCont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .missionWrapperGtoupsMisImg,
+  .missionWrapperGtoupsPlaImg {
+    width: 150px;
+    height: 190px;
+  }
+
+  .aboutContWrapperImg {
+    width: 350px;
+    height: 350px;
+  }
+
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -8%;
+  }
+
+  .roadmapWrapperTimeLineCompleated,
+  .roadmapWrapperTimeLineCurrent,
+  .roadmapWrapperTimeLineFuture {
+    margin-left: 50px;
+  }
+
+  .prospectsWrapperList {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .subscribeWrapperListItemImg,
+  .subscribeWrapperListItemImgTgCa {
+    right: -15%;
+  }
+
+  .footerWrapperList {
+    gap: 17px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .aboutWrapperCont {
+    width: 100%;
+  }
+  .aboutWrapperContTitle,
+  .prospectsWrapperContTitle,
+  .aboutContWrapperTitle,
+  .subscribeWrapperContTitle,
+  .subscribeWrapperListItemContTitle {
+    font-size: 34px;
+  }
+  .aboutContWrapper {
+    flex-direction: column;
+  }
+
+  .aboutContWrapperCont {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .aboutContWrapperSub,
+  .prospectsWrapperContSub,
+  .subscribeWrapperContSub {
+    font-size: 25px;
+  }
+
+  .missionWrapperGtoupsPla,
+  .missionWrapperGtoupsMis {
+    flex-direction: column-reverse;
+  }
+
+  .missionWrapperGtoupsPlaCont,
+  .missionWrapperGtoupsMisCont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .missionWrapperGtoupsMisImg,
+  .missionWrapperGtoupsPlaImg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutContWrapperImg {
+    width: 350px;
+    height: 350px;
+  }
+
+  .prospectsWrapperList {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .prospectsWrapperListItem {
+    width: 100%;
+    height: 100%;
+  }
+
+  .subscribeWrapperCont {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subscribeWrapperListItemCont {
+    width: 90%;
+    left: 34px;
+  }
+
+  .span {
+    position: absolute;
+    width: 708px;
+    height: 77%;
+    top: 0;
+    left: 0;
+    background: #151515;
+    background: linear-gradient(180deg, rgb(21, 21, 21) 40%, rgb(21, 21, 21) 60%, rgba(81, 81, 81, 0) 100%);
+    z-index: -1;
+  }
+
+  .subscribeWrapperListItemImg,
+  .subscribeWrapperListItemImgTgCa {
+    position: absolute;
+    top: inherit;
+    bottom: -15%;
+    right: -13%;
+    width: 161%;
+    height: 71%;
+    border-radius: 25px;
+    z-index: -2;
+    transition: all 0.4s;
+  }
+
+  .roadmapWrapperTimeLineCompleated,
+  .roadmapWrapperTimeLineCurrent,
+  .roadmapWrapperTimeLineFuture {
+    margin-left: 25px;
+  }
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -11%;
+  }
+}

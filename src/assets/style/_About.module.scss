@@ -1,0 +1,279 @@
+.about {
+  padding: 180px 0 90px;
+}
+
+.aboutWrapperCont {
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.aboutWrapperContTitle {
+  font-size: 50px;
+}
+
+.aboutWrapperContSub {
+  margin-bottom: 20px;
+}
+
+.aboutCont,
+.mission {
+  padding: 124px 0 90px;
+}
+
+.aboutContWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutContWrapperImg {
+  filter: drop-shadow(0 0 550px $colorGold);
+}
+
+.aboutContWrapperCont {
+  width: 800px;
+}
+
+.aboutContWrapperTitle,
+.missionWrapperTitle {
+  font-family: $sansation;
+  font-size: 55px;
+  color: $colorGold;
+  margin-bottom: 20px;
+}
+
+.aboutContWrapperSub {
+  font-size: 30px;
+  color: $color;
+}
+
+.missionWrapperTitle {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.missionWrapperGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.missionWrapperGtoupsMis,
+.missionWrapperGtoupsPla {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.missionWrapperGtoupsPla {
+  flex-direction: row-reverse;
+}
+
+.missionWrapperGtoupsMisCont,
+.missionWrapperGtoupsPlaCont {
+  width: 850px;
+}
+
+.missionWrapperGtoupsPlaCont {
+  text-align: right;
+}
+
+.missionWrapperGtoup1Title,
+.missionWrapperGtoupPlaContTitle {
+  font-family: $sansation;
+  font-size: 35px;
+  color: $colorGold;
+  margin-bottom: 20px;
+}
+
+.missionWrapperGtoupsMisContSub,
+.missionWrapperGtoupsPlaContSub {
+  font-size: 26px;
+  color: $color;
+}
+
+.missionWrapperGtoupsMisImg,
+.missionWrapperGtoupsPlaImg {
+  width: 250px;
+  height: 250px;
+  filter: drop-shadow(0 0 150px $colorGold);
+}
+
+.prospects {
+  padding: 80px 0;
+}
+
+.prospectsWrapperCont {
+  text-align: center;
+  margin: 0 auto 70px;
+}
+
+.prospectsWrapperContTitle {
+  font-family: $sansation;
+  font-size: 80px;
+  color: $colorGold;
+  margin-bottom: 20px;
+}
+
+.prospectsWrapperContSub {
+  font-size: 30px;
+}
+
+.progressFillCurrentAbout {
+  width: 20%;
+}
+
+.prospectsWrapperList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prospectsWrapperListItem {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  width: 400px;
+  height: 416px;
+  padding: 25px;
+  border: 1px solid $colorGold;
+  box-shadow: 0 10px 20px $colorGold;
+}
+
+.prospectsWrapperListItemImg {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.prospectsWrapperListItemTitle {
+  font-family: $sansation;
+  font-size: 28px;
+  color: $colorGold;
+  margin-bottom: 20px;
+}
+
+.subscribe {
+  padding: 180px 0;
+}
+
+.subscribeWrapperCont {
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.subscribeWrapperContTitle {
+  font-family: $sansation;
+  font-size: 80px;
+  color: $colorGold;
+  margin-bottom: 20px;
+}
+
+.subscribeWrapperContSub {
+  font-size: 30px;
+  margin-bottom: 70px;
+}
+
+.subscribeWrapperListItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 20px;
+  border: 1px solid $colorGold;
+  border-radius: 25px;
+
+  overflow: hidden;
+}
+
+.subscribeWrapperListItemTgCa,
+.subscribeWrapperListItemTgCh {
+  width: 100%;
+  height: 100%;
+}
+
+.subscribeWrapperListItemTgCa {
+  transition: all 0.4;
+
+  &:hover {
+    .subscribeWrapperListItemImgTgCa {
+      transform: scale(1.1);
+      transition: all 0.8s;
+    }
+    .subscribeWrapperListItemLink {
+      background-color: $color;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.subscribeWrapperListItemTgCh {
+  &:hover {
+    .subscribeWrapperListItemImg {
+      transform: scale(1.1);
+      transition: all 0.8s;
+    }
+    .subscribeWrapperListItemLink1 {
+      background-color: $color;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.subscribeWrapperListItemImg,
+.subscribeWrapperListItemImgTgCa {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  z-index: -2;
+  transition: all 0.4s;
+}
+
+.span {
+  position: absolute;
+  width: 708px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #151515;
+  background: linear-gradient(90deg, rgba(21, 21, 21, 1) 40%, rgba(21, 21, 21, 1) 60%, rgba(81, 81, 81, 0) 100%);
+  z-index: -1;
+}
+
+.subscribeWrapperListItemCont {
+  position: absolute;
+  width: 400px;
+  top: 40px;
+  left: 80px;
+}
+
+.subscribeWrapperListItemContTitle {
+  font-family: $sansation;
+  font-size: 45px;
+  color: $colorGold;
+  margin-bottom: 20px;
+}
+
+.subscribeWrapperListItemContSub {
+  margin-bottom: 319px;
+}
+
+.subscribeWrapperListItemContSubs {
+  margin-bottom: 250px;
+}
+
+.subscribeWrapperListItemLink,
+.subscribeWrapperListItemLink1 {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: $white;
+  transition: all 0.4s;
+}

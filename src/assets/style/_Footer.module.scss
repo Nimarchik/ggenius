@@ -1,0 +1,50 @@
+.footer {
+  padding: 70px 0;
+  border-top: 1px solid rgba($color: $color, $alpha: 0.3);
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footerWrapperList {
+  display: flex;
+  // flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footerWrapperLogoGroupList {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.footerWrapperLogoGroupListItemTg,
+.footerWrapperLogoGroupListItemDs,
+.footerWrapperLogoGroupListItemEmail {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  fill: $colorGold;
+  filter: drop-shadow(0 0 1px $colorGold);
+
+  transition: all .4s;
+
+
+  &:hover {
+    transform: rotate(360deg);
+    filter: drop-shadow(0 0 15px $colorGold);
+    transition: all .4s;
+  }
+}
+
+
+.footerWrapperListItemTitle {
+  font-family: $sourceSans;
+  font-size: 28px;
+  color: $colorGold;
+  margin-bottom: 20px;
+}
