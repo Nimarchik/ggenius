@@ -16,7 +16,7 @@ const Helmets = ({ titleKey = 'meta.title', descKey = 'meta.description' }) => {
 
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ggenius.gg/" />
+    <meta property="og:url" content="https://ggenius.gg/uk/Home" />
     <meta property="og:title" content="GGenius" />
     <meta property="og:description" content="Революційний інтерфейс для кіберспортивної спільноти MLBB! AI Cards Hub - це інтерактивна система карток, які живуть, реагують на дотик та надають персоналізовані AI-поради." />
     <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
