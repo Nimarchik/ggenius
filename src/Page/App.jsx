@@ -6,13 +6,12 @@ import Heder from './layout/Header'
 import Footer from './layout/Footer'
 import { animated, useTransition } from 'react-spring'
 import Aos from 'aos'
-import i18n from '../i18n'
+// import i18n from '../i18n'
 import { useTranslation } from 'react-i18next'
 import Helmets from './Helmets'
 
 
 function App() {
-
   const { i18n } = useTranslation();
   const { l: lang } = useParams();
   const location = useLocation();

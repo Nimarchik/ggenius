@@ -215,6 +215,20 @@
 	"Alucard": "Алукард",
 	"Tigreal": "Тігріл",
 	"Nana": "Нана",
+	"keywords": "Mobile Legends, guides, heroes, tournament, eSports, ggenius, GGenius, mlbb, mobla, ggenius, ggunius, heroes, guides, eSports, mlbb,MLBB",
+	"meta": {
+		"title": "GGenius - an AI platform for tournaments",
+		"description": "Mobile Legends guides, heroes, tournaments and news"
+	},
+	"homes": {
+		"title": "Home | GGenius",
+		"description": "GGenius home page."
+	},
+	"abouts": {
+		"title": "About us | GGenius",
+		"description": "Information about the Ggenius project."
+	},
+	"descript": "Create, win, improve with Ggenius.",
 	"": "",
 	"": "",
 	"": "",

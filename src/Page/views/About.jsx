@@ -12,6 +12,7 @@ import Aos from 'aos';
 import { Link } from 'react-router';
 import alpha from '../../assets/pictures/About/alpha.jpg'
 import fasha from '../../assets/pictures/About/fasha.jpeg'
+import Helmets from '../Helmets';
 
 
 const About = () => {
@@ -19,6 +20,9 @@ const About = () => {
   const { t } = useTranslation()
 
   return <>
+
+    <Helmets titleKey='abouts.title' descKey='abouts.description' />
+    
     <section className={style.about}>
       <div className={style.container}>
         <div className={style.aboutWrapper}>

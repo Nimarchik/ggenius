@@ -22,8 +22,11 @@ const Home = () => {
     window.addEventListener('resize', setVh);
     return () => window.removeEventListener('resize', setVh);
   }, []);
+
   return <>
-    <Helmets />
+
+    <Helmets titleKey='homes.title' descKey='homes.description' />
+
     <section className={style.home}>
       <div className={style.container}>
         <div className={style.homeWrapper}>
