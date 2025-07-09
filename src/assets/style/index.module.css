@@ -25,7 +25,7 @@ html {
   font-family: "Source Sans 3", sans-serif;
   font-weight: normal;
   font-size: 25px;
-  color: #515151;
+  color: #8b8b8b;
 }
 
 a {
@@ -127,7 +127,7 @@ select {
 
 .navListItemLink {
   position: relative;
-  color: #515151;
+  color: #8b8b8b;
   transition: all 0.4s;
 }
 .navListItemLink::after {
@@ -174,6 +174,7 @@ select {
 .navLogin {
   cursor: pointer;
   background-color: #f9d58e;
+  color: #151515;
   padding: 6px 31px;
   font-weight: 700;
   border-radius: 5px;
@@ -191,7 +192,7 @@ select {
 
 .footer {
   padding: 70px 0;
-  border-top: 1px solid rgba(81, 81, 81, 0.3);
+  border-top: 1px solid rgba(139, 139, 139, 0.3);
 }
 
 .footerWrapper {
@@ -365,7 +366,7 @@ select {
 }
 
 .heroesWrapperBodyFilterLableSun {
-  color: #515151;
+  color: #8b8b8b;
   transition: all 0.4s;
 }
 
@@ -395,7 +396,7 @@ select {
 .works,
 .roadmap,
 .prospects {
-  border-bottom: 1px solid rgba(81, 81, 81, 0.3);
+  border-bottom: 1px solid rgba(139, 139, 139, 0.3);
 }
 
 .homeWrapper {
@@ -428,7 +429,7 @@ select {
 
 .homeWrapperSub,
 .roadmapWrapperContSub {
-  color: #515151;
+  color: #8b8b8b;
   margin-bottom: 60px;
 }
 
@@ -439,6 +440,10 @@ select {
   border-radius: 50%;
   border: 3px solid #f9d58e;
   box-shadow: 0 0 2050px #f9d58e;
+}
+
+.homeWrapperCont {
+  width: 650px;
 }
 
 .homeWrapperContBtns {
@@ -453,6 +458,7 @@ select {
   align-items: center;
   width: 217px;
   font-size: 25px;
+  color: #151515;
   font-family: "Source Sans 3", sans-serif;
   background-color: #f9d58e;
   padding: 10px 40px;
@@ -516,7 +522,7 @@ select {
 }
 
 .worksWrapperSub {
-  color: #515151;
+  color: #8b8b8b;
 }
 
 .worksWrapperList {
@@ -525,7 +531,7 @@ select {
   gap: 127px;
 }
 
-.worksWrapperListItem {
+.worksWrapperListItemGroups {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -639,7 +645,7 @@ select {
 .roadmapWrapperTimeLineCompleatedSub,
 .roadmapWrapperTimeLineCurrentSub,
 .roadmapWrapperTimeLineFutureSub {
-  color: #515151;
+  color: #8b8b8b;
   margin-bottom: 30px;
 }
 
@@ -649,7 +655,7 @@ select {
   width: 686px;
   border-radius: 5px;
   margin-bottom: 15px;
-  background-color: #515151;
+  background-color: #8b8b8b;
 }
 
 .progressFill,
@@ -731,7 +737,7 @@ select {
 
 .aboutContWrapperSub {
   font-size: 30px;
-  color: #515151;
+  color: #8b8b8b;
 }
 
 .missionWrapperTitle {
@@ -776,7 +782,7 @@ select {
 .missionWrapperGtoupsMisContSub,
 .missionWrapperGtoupsPlaContSub {
   font-size: 26px;
-  color: #515151;
+  color: #8b8b8b;
 }
 
 .missionWrapperGtoupsMisImg,
@@ -890,7 +896,7 @@ select {
   transition: all 0.8s;
 }
 .subscribeWrapperListItemTgCa:hover .subscribeWrapperListItemLink {
-  background-color: #515151;
+  background-color: #8b8b8b;
   transition: all 0.4s;
 }
 
@@ -899,7 +905,7 @@ select {
   transition: all 0.8s;
 }
 .subscribeWrapperListItemTgCh:hover .subscribeWrapperListItemLink1 {
-  background-color: #515151;
+  background-color: #8b8b8b;
   transition: all 0.4s;
 }
 
@@ -973,7 +979,7 @@ select {
   align-items: center;
   width: 200px;
   height: 200px;
-  border: 5px solid #515151;
+  border: 5px solid #8b8b8b;
   border-bottom-color: #f9d58e;
   border-radius: 50%;
   animation: rotation 1s linear infinite;

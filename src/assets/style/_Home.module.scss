@@ -65,6 +65,9 @@
   box-shadow: 0 0 2050px $colorGold;
 }
 
+.homeWrapperCont {
+  width: 650px;
+}
 .homeWrapperContBtns {
   display: flex;
   gap: 62px;
@@ -77,6 +80,7 @@
   align-items: center;
   width: 217px;
   font-size: 25px;
+  color: $background;
   font-family: $sourceSans;
   background-color: $colorGold;
   padding: 10px 40px;
@@ -153,10 +157,12 @@
   gap: 127px;
 }
 
-.worksWrapperListItem {
+
+.worksWrapperListItemGroups {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+
 }
 
 .worksWrapperListItemImg {
