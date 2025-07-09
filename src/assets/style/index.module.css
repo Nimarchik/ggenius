@@ -1265,6 +1265,9 @@ select {
   }
 }
 @media screen and (max-width: 540px) {
+  .home {
+    padding: 200px 0 20px;
+  }
   .homeWrapper {
     flex-direction: column;
   }
@@ -1297,6 +1300,8 @@ select {
     height: 25px;
   }
   .homeWrapperImg {
+    display: none;
+    visibility: hidden;
     width: 300px;
     height: 301px;
   }
