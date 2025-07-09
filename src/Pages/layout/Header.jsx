@@ -54,7 +54,7 @@ const Header = () => {
         <nav className={style.nav}>
           <Link to={`/${lang}/Home`} className={style.navLogo} aria-label='link to the Home'>
             <svg className={style.logoSvg} xmlns="http:;//www.w3.org/2000/svg" width="326" height="99" viewBox="0 0 326 99">
-              <text id="GGenius" xmlSpace="preserve" x="3.148438" y="77" fontFamily="Arial" fontSize="80" fill="gold">GGenius</text>
+              <text className={style.logoSvg} id="GGenius" xmlSpace="preserve" x="3.148438" y="77" fontFamily="Sansation" fontSize="70" fill="gold">GGenius</text>
             </svg>
           </Link>
 

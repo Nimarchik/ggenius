@@ -1,15 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './Page/App.jsx'
+import App from './Pages/App.jsx'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router'
 import { HelmetProvider } from 'react-helmet-async';
 
 
 import './i18n.js'
-import Heroes from './Page/views/Heroes.jsx'
-import Home from './Page/Home.jsx'
-import About from './Page/views/About.jsx'
-import PreviewHeroes from './Page/PreviewHeroes.jsx'
+import Heroes from './Pages/views/Heroes.jsx'
+import Home from './Pages/Home.jsx'
+import About from './Pages/views/About.jsx'
+import PreviewHeroes from './Pages/PreviewHeroes.jsx'
 
 const router = createBrowserRouter([
   {
@@ -45,5 +45,6 @@ createRoot(document.getElementById('root')).render(
     <HelmetProvider>
       <RouterProvider router={router} />
     </HelmetProvider>
-  </StrictMode>,
+  </StrictMode>
+
 )

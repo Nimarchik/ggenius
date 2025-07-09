@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 import Helmets from './Helmets'
 
 
-function App() {
+ function App() {
   const { i18n } = useTranslation();
   const { l: lang } = useParams();
   const location = useLocation();
@@ -46,7 +46,6 @@ function App() {
     <>
       <Helmets />
 
-
       <div className={style.wrapper}>
         <Heder />
         <main key={i18n.language} className={style.main}>
@@ -63,5 +62,6 @@ function App() {
     </>
   )
 }
+
 
 export default App

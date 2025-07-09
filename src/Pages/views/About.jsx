@@ -279,12 +279,12 @@ const About = () => {
 
 
 
-          <ul className={style.subscribeWrapperList}>
-            <li className={style.subscribeWrapperListItem}>
-              <div data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+          <div className={style.subscribeWrapperList}>
+            <div data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+              <div className={style.subscribeWrapperListItem}>
                 <Link aria-label='link to the Telegram chanel' className={style.subscribeWrapperListItemTgCa} to={'https://t.me/ggenius_gg'}>
-                  <img className={style.subscribeWrapperListItemImgTgCa} src={alpha} alt="" />
+                  <img className={style.subscribeWrapperListItemImgTgCa} src={alpha} alt="img mllbb hero alpha" />
                   <span className={style.span}></span>
                   <div className={style.subscribeWrapperListItemCont}>
                     <h6 className={style.subscribeWrapperListItemContTitle}>
@@ -299,15 +299,15 @@ const About = () => {
                   </div>
                 </Link>
               </div>
-            </li>
+            </div>
 
 
 
-            <li className={style.subscribeWrapperListItem}>
-              <div data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom">
+            <div data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+              <div className={style.subscribeWrapperListItem}>
                 <Link aria-label='link to the Telegram chat' className={style.subscribeWrapperListItemTgCh} to={'https://t.me/ggenius_chat'}>
-                  <img className={style.subscribeWrapperListItemImg} src={fasha} alt="" />
+                  <img className={style.subscribeWrapperListItemImg} src={fasha} alt="img mllbb hero fasha" />
                   <span className={style.span}></span>
 
                   <div className={style.subscribeWrapperListItemCont}>
@@ -323,9 +323,9 @@ const About = () => {
                   </div>
                 </Link>
               </div>
-            </li>
+            </div>
 
-          </ul>
+          </div>
 
 
         </div>

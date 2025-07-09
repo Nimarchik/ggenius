@@ -12,8 +12,8 @@ import Helmets from './Helmets';
 
 const Home = () => {
   const { t } = useTranslation()
-
   useEffect(() => {
+
     const setVh = () => {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -255,6 +255,8 @@ const Home = () => {
       </div>
     </section>
   </>
+
 }
 
-export default Home;
+
+export default Home

@@ -1112,8 +1112,13 @@ select {
 
 @media screen and (max-width: 1280px) {
   .nav {
+    display: flex;
+    align-items: center;
     position: relative;
     padding: 0 20px;
+  }
+  .logoSvg {
+    font-family: "Sansation", sans-serif !important;
   }
   .navLinksList {
     transform: translateX(11px);
