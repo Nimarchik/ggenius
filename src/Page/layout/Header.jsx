@@ -52,7 +52,7 @@ const Header = () => {
     <header className={style.header}>
       <div className={style.container}>
         <nav className={style.nav}>
-          <Link to={`/${lang}/Home`} className={style.navLogo}>
+          <Link to={`/${lang}/Home`} className={style.navLogo} aria-label='link to the Home'>
             <svg className={style.logoSvg} xmlns="http:;//www.w3.org/2000/svg" width="326" height="99" viewBox="0 0 326 99">
               <text id="GGenius" xmlSpace="preserve" x="3.148438" y="77" fontFamily="Arial" fontSize="80" fill="gold">GGenius</text>
             </svg>
@@ -61,33 +61,33 @@ const Header = () => {
           <div className={!menu ? style.navLinksListActive : style.navLinksList}>
             <ul className={style.navList}>
               <li className={style.navListItem}>
-                <Link to={`/${lang}/Home`} onClick={() => setMenu(!menu)} className={currentPath.endsWith('/Home') ? style.navListItemLinkActive : style.navListItemLink}>
+                <Link aria-label='link to the Home' to={`/${lang}/Home`} onClick={() => setMenu(!menu)} className={currentPath.endsWith('/Home') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('home')}
                 </Link>
               </li>
               <li className={style.navListItem}>
                 {/* to={`/${lang}/Heroes`} */}
-                <Link onClick={e => e.preventDefault()} className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
+                <Link aria-label='link to the heroes page' onClick={e => e.preventDefault()} className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('heroes')}
                 </Link>
               </li>
               <li className={style.navListItem}>
-                <Link onClick={e => e.preventDefault()} className={style.navListItemLink}>
+                <Link aria-label='link to the Contact page' onClick={e => e.preventDefault()} className={style.navListItemLink}>
                   {t('Notice')}
                 </Link>
               </li>
               <li className={style.navListItem}>
-                <Link onClick={e => e.preventDefault()} className={style.navListItemLink}>
+                <Link aria-label='link to the Guides page' onClick={e => e.preventDefault()} className={style.navListItemLink}>
                   {t('Guides')}
                 </Link>
               </li>
               <li className={style.navListItem}>
-                <Link onClick={e => e.preventDefault()} className={style.navListItemLink}>
+                <Link aria-label='link to the Esports page' onClick={e => e.preventDefault()} className={style.navListItemLink}>
                   {t('Esports')}
                 </Link>
               </li>
               <li className={style.navListItem}>
-                <Link to={`/${lang}/About`} onClick={() => setMenu(!menu)} className={currentPath.endsWith('About') ? style.navListItemLinkActive : style.navListItemLink}>
+                <Link aria-label='link to the About page' to={`/${lang}/About`} onClick={() => setMenu(!menu)} className={currentPath.endsWith('About') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('about')}
                 </Link>
               </li>
@@ -98,7 +98,7 @@ const Header = () => {
                 <option value="en">EN</option>
               </select>
 
-              <Link className={style.navLogin}>
+              <Link aria-label='link to the login page' className={style.navLogin}>
                 {t('Login')}
               </Link>
             </div>
@@ -106,7 +106,7 @@ const Header = () => {
 
 
 
-          <button className={style.navMenu} onClick={() => setMenu(!menu)}>
+          <button title='Menu' aria-label='Button Menu' className={style.navMenu} onClick={() => setMenu(!menu)}>
             <span className={menu ? style.navMenuSpan1Active : style.navMenuSpan1}></span>
             <span className={menu ? style.navMenuSpan2Active : style.navMenuSpan2}></span>
             <span className={menu ? style.navMenuSpan3Active : style.navMenuSpan3}></span>

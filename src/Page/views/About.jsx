@@ -22,7 +22,7 @@ const About = () => {
   return <>
 
     <Helmets titleKey='abouts.title' descKey='abouts.description' />
-    
+
     <section className={style.about}>
       <div className={style.container}>
         <div className={style.aboutWrapper}>
@@ -277,13 +277,13 @@ const About = () => {
           </div>
 
 
+
+
           <ul className={style.subscribeWrapperList}>
-            <div data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom">
-
-
-              <li className={style.subscribeWrapperListItem}>
-                <Link className={style.subscribeWrapperListItemTgCa} to={'https://t.me/ggenius_gg'}>
+            <li className={style.subscribeWrapperListItem}>
+              <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                <Link aria-label='link to the Telegram chanel' className={style.subscribeWrapperListItemTgCa} to={'https://t.me/ggenius_gg'}>
                   <img className={style.subscribeWrapperListItemImgTgCa} src={alpha} alt="" />
                   <span className={style.span}></span>
                   <div className={style.subscribeWrapperListItemCont}>
@@ -298,15 +298,15 @@ const About = () => {
                     </p>
                   </div>
                 </Link>
-              </li>
-            </div>
-
-            <div data-aos="fade-up"
-              data-aos-anchor-placement="center-bottom">
+              </div>
+            </li>
 
 
-              <li className={style.subscribeWrapperListItem}>
-                <Link className={style.subscribeWrapperListItemTgCh} to={'https://t.me/ggenius_chat'}>
+
+            <li className={style.subscribeWrapperListItem}>
+              <div data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
+                <Link aria-label='link to the Telegram chat' className={style.subscribeWrapperListItemTgCh} to={'https://t.me/ggenius_chat'}>
                   <img className={style.subscribeWrapperListItemImg} src={fasha} alt="" />
                   <span className={style.span}></span>
 
@@ -322,8 +322,8 @@ const About = () => {
                     </p>
                   </div>
                 </Link>
-              </li>
-            </div>
+              </div>
+            </li>
 
           </ul>
 

@@ -13,7 +13,7 @@ const Footer = () => {
       <div className={style.container}>
         <div className={style.footerWrapper}>
           <div className={style.footerWrapperLogoGroup}>
-            <Link to={`/`}  className={style.footerLogo}>
+            <Link aria-label='logo and link to the Home page' to={`/`}  className={style.footerLogo}>
               <svg className={style.logoSvg} xmlns="http:;//www.w3.org/2000/svg" width="326" height="99" viewBox="0 0 326 99">
                 <text id="GGenius" xmlSpace="preserve" x="3.148438" y="77" fontFamily="Arial" fontSize="80" fill="gold">GGenius</text>
               </svg>
@@ -45,22 +45,22 @@ const Footer = () => {
               </h6> */}
             </li>
             <li className={style.navListItem}>
-              <Link to={`/${lang}/Home`} className={currentPath.endsWith('/Home') ? style.navListItemLinkActive : style.navListItemLink}>
+              <Link aria-label='link to the Home page' to={`/${lang}/Home`} className={currentPath.endsWith('/Home') ? style.navListItemLinkActive : style.navListItemLink}>
                 {t('home')}
               </Link>
             </li>
             <li className={style.navListItem}>
-              <Link to={`/${lang}/Heroes`} onClick={e => e.preventDefault()} className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
+              <Link aria-label='link to the Heroes page' to={`/${lang}/Heroes`} onClick={e => e.preventDefault()} className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
                 {t('heroes')}
               </Link>
             </li>
             <li className={style.navListItem}>
-              <Link className={style.navListItemLink} onClick={e => e.preventDefault()}>
+              <Link aria-label='link to the Contact page' className={style.navListItemLink} onClick={e => e.preventDefault()}>
                 {t('Notice')}
               </Link>
             </li>
             <li className={style.navListItem}>
-              <Link className={style.navListItemLink} onClick={e => e.preventDefault()}>
+              <Link aria-label='link to the Guides page' className={style.navListItemLink} onClick={e => e.preventDefault()}>
                 {t('Guides')}
               </Link>
             </li>
@@ -70,7 +70,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className={style.navListItem}>
-              <Link to={`/${lang}/About`} className={currentPath.endsWith('About') ? style.navListItemLinkActive : style.navListItemLink}>
+              <Link aria-label='link to the About page' to={`/${lang}/About`} className={currentPath.endsWith('About') ? style.navListItemLinkActive : style.navListItemLink}>
                 {t('about')}
               </Link>
             </li>
