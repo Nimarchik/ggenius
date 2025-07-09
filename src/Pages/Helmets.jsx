@@ -6,8 +6,8 @@ const Helmets = ({ titleKey = 'meta.title', descKey = 'meta.description' }) => {
   const { t } = useTranslation()
 
   return <Helmet>
-    <title>{t(titleKey)}</title>
-    <meta name="description" content={t(descKey)} />
+    {/* <title>{t(titleKey)}</title> */}
+    {/* <meta name="description" content={t(descKey)} /> */}
     <meta name="keywords" content="Mobile Legends, гайди, герої, турнір, кіберспорт, ggenius, GGenius, млбб, мобла, ггеніус, ггуніус, герои, гайды, киберспорт, mlbb,MLBB" />
     {/* <meta property="og:title" content="GGenius" /> */}
     <meta property="og:image" content="https://ggenius.gg/preview.webp" />
