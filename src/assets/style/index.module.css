@@ -1118,6 +1118,12 @@ select {
 }
 
 @media screen and (max-width: 1280px) {
+  .header {
+    height: 90px;
+  }
+  .header::after {
+    height: 90px;
+  }
   .nav {
     display: flex;
     align-items: center;
@@ -1125,7 +1131,7 @@ select {
     padding: 0 20px;
   }
   .logoSvg {
-    font-family: "Sansation", sans-serif !important;
+    font-size: 30px;
   }
   .navLinksList {
     transform: translateX(11px);
@@ -1160,8 +1166,8 @@ select {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 30px;
     z-index: 20;
   }
   .navGroups {
@@ -1179,10 +1185,12 @@ select {
     height: 4px;
     background-color: #f9d58e;
     opacity: 1;
+    border-radius: 10px;
     transition: all 0.4s;
   }
   .navMenuSpan1Active {
-    transform: rotate(45deg) translateX(10px) translateY(10px);
+    transform: rotate(45deg) translateX(8px) translateY(8px);
+    width: 40px;
     box-shadow: 0 0 10px #f9d58e;
   }
   .navMenuSpan2Active {
@@ -1191,6 +1199,7 @@ select {
   }
   .navMenuSpan3Active {
     transform: rotate(-45deg) translateX(10px) translateY(-10px);
+    width: 40px;
     box-shadow: 0 0 10px #f9d58e;
   }
 }

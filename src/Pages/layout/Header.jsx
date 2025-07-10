@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import logo from '../../assets/pictures/Header/logo.svg'
 
 
 const Header = () => {
