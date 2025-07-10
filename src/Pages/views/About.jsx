@@ -205,7 +205,7 @@ const About = () => {
 
           <div data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1000">
+            data-aos-duration="500">
             <div className={style.prospectsWrapperCont}>
               <h4 className={style.prospectsWrapperContTitle}>
                 {t('prospectsWrapperContTitle')}
@@ -219,7 +219,7 @@ const About = () => {
 
           <div className={style.prospectsWrapperList}>
 
-            <div data-aos="flip-left" data-aos-duration="1000">
+            <div data-aos="flip-left" data-aos-duration="500">
               <div className={style.prospectsWrapperListItem}>
                 <img src={insignia} alt="icon insignia" className={style.prospectsWrapperListItemImg} />
                 <h5 className={style.prospectsWrapperListItemTitle}>
@@ -231,7 +231,7 @@ const About = () => {
               </div>
             </div>
 
-            <div data-aos="flip-left" data-aos-duration="2000">
+            <div data-aos="flip-left" data-aos-duration="600">
               <div className={style.prospectsWrapperListItem}>
                 <img src={give} alt="icon cryptocurrency" className={style.prospectsWrapperListItemImg} />
                 <h5 className={style.prospectsWrapperListItemTitle}>
