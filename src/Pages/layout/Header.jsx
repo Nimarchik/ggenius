@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate, useParams } from 'react-router';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import logo from '../../assets/pictures/Header/logo.svg'
 
 
 const Header = () => {
@@ -57,9 +58,7 @@ const Header = () => {
 
           <nav className={style.nav}>
             <Link to={`/${lang}/Home`} className={style.navLogo} aria-label='link to the Home'>
-              <svg className={style.logoSvg} xmlns="http:;//www.w3.org/2000/svg" width="326" height="99" viewBox="0 0 326 99">
-                <text className={style.logoSvg} id="GGenius" xmlSpace="preserve" x="3.148438" y="77" fontFamily="Sansation" fontSize="70" fill="gold">GGenius</text>
-              </svg>
+              <img alt="logo" className={style.logoSvg} src={logo}/>
             </Link>
 
             <div className={!menu ? style.navLinksListActive : style.navLinksList}>

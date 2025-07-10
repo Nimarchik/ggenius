@@ -157,7 +157,7 @@ const Heroes = () => {
           </div>
         </div>
       </div>
-    </section >
+    </section>
   </>
 }
 

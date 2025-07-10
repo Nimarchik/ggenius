@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 // import Helmets from './Helmets'
 
 
- function App() {
+function App() {
   const { i18n } = useTranslation();
   const { l: lang } = useParams();
   const location = useLocation();
@@ -25,7 +25,13 @@ import { useTranslation } from 'react-i18next'
   useEffect(() => {
     window.scroll(0, 0)
   }, [])
-  Aos.init()
+
+  Aos.init({
+    disable: function () {
+      // отключить на мобильных устройствах с плохой производительностью
+      return window.innerWidth < 768;
+    }
+  });
 
 
   const transitions = useTransition(location, {
