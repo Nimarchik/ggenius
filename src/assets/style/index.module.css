@@ -1,4 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@font-face {
+  font-family: "Sansation";
+  src: url("/fonts/Sansation/Sansation-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sansation";
+  src: url("/fonts/Sansation/Sansation-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/fonts/SourceSans3/static/SourceSans3-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/fonts/SourceSans3/static/SourceSans3-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 *,
 body,
 html {
@@ -74,6 +97,12 @@ select {
   flex-direction: column;
 }
 
+@media screen and (max-width: 540px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
 .header {
   position: fixed;
   inset: 0;
