@@ -1264,6 +1264,39 @@ select {
     height: 200px;
   }
 }
+@media screen and (max-width: 768px) {
+  .homeWrapperImg {
+    width: 308px;
+    height: 308px;
+  }
+  .works {
+    padding: 200px 0 200px;
+  }
+  .worksWrapperListItemCont {
+    width: 405px;
+  }
+  .worksWrapperListItemImg {
+    width: 200px;
+    height: 180px;
+  }
+  .progressbar,
+  .progressbarCurrent {
+    width: 100%;
+  }
+  .roadmapWrapperTimeLine {
+    width: 94%;
+  }
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -11%;
+  }
+  .footerWrapperList {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px;
+  }
+}
 @media screen and (max-width: 540px) {
   .home {
     padding: 200px 0 20px;
@@ -1319,16 +1352,23 @@ select {
     margin-bottom: 10px;
   }
   .works {
-    padding: 200px 0 255px;
+    padding: 150px 0 150px;
   }
   .worksWrapperList {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 50px;
   }
+  .worksWrapperListItemGroups {
+    justify-content: space-between;
+  }
+  .worksWrapperListItemCont {
+    width: 250px;
+  }
   .worksWrapperListItemImg {
-    width: 180px;
-    height: 156px;
+    width: 120px;
+    height: 94px;
   }
   .worksWrapperListItem {
     width: 100%;
@@ -1338,7 +1378,7 @@ select {
     font-size: 25px;
   }
   .worksWrapperListItemSub {
-    font-size: 16px;
+    font-size: 14px;
   }
   .roadmapWrapperTimeLine {
     width: 95%;
@@ -1362,6 +1402,27 @@ select {
     border-radius: 5px;
     margin-bottom: 15px;
     background-color: #515151;
+  }
+}
+@media screen and (max-width: 414px) {
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -14%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -13%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -15%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1430,11 +1491,6 @@ select {
     width: 350px;
     height: 350px;
   }
-  .roadmapWrapperTimeLineCompleatedImg,
-  .roadmapWrapperTimeLineFutureImg,
-  .roadmapWrapperTimeLineCurrentImg {
-    left: -8%;
-  }
   .roadmapWrapperTimeLineCompleated,
   .roadmapWrapperTimeLineCurrent,
   .roadmapWrapperTimeLineFuture {
@@ -1449,6 +1505,15 @@ select {
   .subscribeWrapperListItemImg,
   .subscribeWrapperListItemImgTgCa {
     right: -15%;
+  }
+  .subscribeWrapperListItem {
+    height: 530px;
+  }
+  .subscribeWrapperListItemContSub {
+    margin-bottom: 241px;
+  }
+  .subscribeWrapperListItemContSubs {
+    margin-bottom: 176px;
   }
   .footerWrapperList {
     gap: 17px;
@@ -1537,10 +1602,5 @@ select {
   .roadmapWrapperTimeLineCurrent,
   .roadmapWrapperTimeLineFuture {
     margin-left: 25px;
-  }
-  .roadmapWrapperTimeLineCompleatedImg,
-  .roadmapWrapperTimeLineFutureImg,
-  .roadmapWrapperTimeLineCurrentImg {
-    left: -11%;
   }
 }/*# sourceMappingURL=index.module.css.map */

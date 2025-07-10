@@ -43,11 +43,11 @@
     height: 350px;
   }
 
-  .roadmapWrapperTimeLineCompleatedImg,
-  .roadmapWrapperTimeLineFutureImg,
-  .roadmapWrapperTimeLineCurrentImg {
-    left: -8%;
-  }
+  // .roadmapWrapperTimeLineCompleatedImg,
+  // .roadmapWrapperTimeLineFutureImg,
+  // .roadmapWrapperTimeLineCurrentImg {
+  //   left: -8%;
+  // }
 
   .roadmapWrapperTimeLineCompleated,
   .roadmapWrapperTimeLineCurrent,
@@ -67,6 +67,17 @@
     right: -15%;
   }
 
+  .subscribeWrapperListItem {
+    height: 530px;
+  }
+
+  .subscribeWrapperListItemContSub {
+    margin-bottom: 241px;
+  }
+
+  .subscribeWrapperListItemContSubs {
+    margin-bottom: 176px;
+  }
   .footerWrapperList {
     gap: 17px;
   }
@@ -168,10 +179,5 @@
   .roadmapWrapperTimeLineCurrent,
   .roadmapWrapperTimeLineFuture {
     margin-left: 25px;
-  }
-  .roadmapWrapperTimeLineCompleatedImg,
-  .roadmapWrapperTimeLineFutureImg,
-  .roadmapWrapperTimeLineCurrentImg {
-    left: -11%;
   }
 }

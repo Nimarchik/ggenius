@@ -41,7 +41,40 @@
     width: 200px;
     height: 200px;
   }
-  
+}
+
+@media screen and (max-width: 768px) {
+  .homeWrapperImg {
+    width: 308px;
+    height: 308px;
+  }
+  .works {
+    padding: 200px 0 200px;
+}
+  .worksWrapperListItemCont {
+    width: 405px;
+  }
+  .worksWrapperListItemImg {
+    width: 200px;
+    height: 180px;
+  }
+  .progressbar,
+  .progressbarCurrent {
+    width: 100%;
+  }
+  .roadmapWrapperTimeLine {
+    width: 94%;
+  }
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -11%;
+  }
+  .footerWrapperList {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -108,18 +141,25 @@
   }
 
   .works {
-    padding: 200px 0 255px;
+    padding: 150px 0 150px;
   }
 
   .worksWrapperList {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 50px;
+  }
+  .worksWrapperListItemGroups {
+    justify-content: space-between;
+  }
+  .worksWrapperListItemCont {
+    width: 250px;
   }
 
   .worksWrapperListItemImg {
-    width: 180px;
-    height: 156px;
+    width: 120px;
+    height: 94px;
   }
 
   .worksWrapperListItem {
@@ -132,7 +172,7 @@
   }
 
   .worksWrapperListItemSub {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .roadmapWrapperTimeLine {
@@ -153,6 +193,12 @@
     left: -10%;
   }
 
+  // .roadmapWrapperTimeLineCompleatedImg,
+  // .roadmapWrapperTimeLineFutureImg,
+  // .roadmapWrapperTimeLineCurrentImg {
+  //   left: -10%;
+  // }
+
   .progressbar,
   .progressbarCurrent {
     height: 8px;
@@ -163,6 +209,29 @@
   }
 }
 
+@media screen and (max-width: 414px) {
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -14%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -13%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .roadmapWrapperTimeLineCompleatedImg,
+  .roadmapWrapperTimeLineFutureImg,
+  .roadmapWrapperTimeLineCurrentImg {
+    left: -15%;
+  }
+}
 @media screen and (max-width: 360px) {
   .roadmapWrapperTimeLineCompleatedImg,
   .roadmapWrapperTimeLineFutureImg,

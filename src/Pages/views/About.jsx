@@ -12,7 +12,7 @@ import Aos from 'aos';
 import { Link } from 'react-router';
 import alpha from '../../assets/pictures/About/alpha.jpg'
 import fasha from '../../assets/pictures/About/fasha.jpeg'
-import Helmets from '../Helmets';
+// import Helmets from '../Helmets';
 
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
 
   return <>
 
-    <Helmets titleKey='abouts.title' descKey='abouts.description' />
+    {/* <Helmets titleKey='abouts.title' descKey='abouts.description' /> */}
 
     <section className={style.about}>
       <div className={style.container}>
@@ -49,7 +49,7 @@ const About = () => {
               {t('aboutContWrapperSub')}
             </p>
           </div>
-          <img className={style.aboutContWrapperImg} src={logo} alt="" />
+          <img className={style.aboutContWrapperImg} src={logo} alt="img logo" />
         </div>
       </div>
     </section>
@@ -75,7 +75,7 @@ const About = () => {
                     {t('missionWrapperGtoupsMisContSub')}
                   </p>
                 </div>
-                <img className={style.missionWrapperGtoupsMisImg} src={logoMis} alt="" />
+                <img className={style.missionWrapperGtoupsMisImg} src={logoMis} alt="icon mission" />
               </div>
             </div>
 
@@ -89,7 +89,7 @@ const About = () => {
                     {t('missionWrapperGtoupsPlaContSub')}
                   </p>
                 </div>
-                <img className={style.missionWrapperGtoupsPlaImg} src={logoPla} alt="" />
+                <img className={style.missionWrapperGtoupsPlaImg} src={logoPla} alt="icon platform" />
               </div>
             </div>
 
@@ -103,7 +103,7 @@ const About = () => {
                     {t('missionWrapperGtoupsCupContSub')}
                   </p>
                 </div>
-                <img className={style.missionWrapperGtoupsMisImg} src={logoCup} alt="" />
+                <img className={style.missionWrapperGtoupsMisImg} src={logoCup} alt="icon cup" />
               </div>
             </div>
 
@@ -219,45 +219,45 @@ const About = () => {
           </div>
 
 
-          <ul className={style.prospectsWrapperList}>
+          <div className={style.prospectsWrapperList}>
 
             <div data-aos="flip-left" data-aos-duration="1000">
-              <li className={style.prospectsWrapperListItem}>
-                <img src={insignia} alt="" className={style.prospectsWrapperListItemImg} />
+              <div className={style.prospectsWrapperListItem}>
+                <img src={insignia} alt="icon insignia" className={style.prospectsWrapperListItemImg} />
                 <h5 className={style.prospectsWrapperListItemTitle}>
                   {t('prospectsWrapperListItemTitleGame')}
                 </h5>
                 <p className={style.prospectsWrapperListItemSub}>
                   {t('prospectsWrapperListItemSubGame')}
                 </p>
-              </li>
+              </div>
             </div>
 
             <div data-aos="flip-left" data-aos-duration="2000">
-              <li className={style.prospectsWrapperListItem}>
-                <img src={give} alt="" className={style.prospectsWrapperListItemImg} />
+              <div className={style.prospectsWrapperListItem}>
+                <img src={give} alt="icon cryptocurrency" className={style.prospectsWrapperListItemImg} />
                 <h5 className={style.prospectsWrapperListItemTitle}>
                   {t('prospectsWrapperListItemTitleCryp')}
                 </h5>
                 <p className={style.prospectsWrapperListItemSub}>
                   {t('prospectsWrapperListItemSubCryp')}
                 </p>
-              </li>
+              </div>
             </div>
 
             <div data-aos="flip-left" data-aos-duration="3000">
-              <li className={style.prospectsWrapperListItem}>
-                <img src={trophy} alt="" className={style.prospectsWrapperListItemImg} />
+              <div className={style.prospectsWrapperListItem}>
+                <img src={trophy} alt="icon influence" className={style.prospectsWrapperListItemImg} />
                 <h5 className={style.prospectsWrapperListItemTitle}>
                   {t('prospectsWrapperListItemTitleFut')}
                 </h5>
                 <p className={style.prospectsWrapperListItemSub}>
                   {t('prospectsWrapperListItemSubFut')}
                 </p>
-              </li>
+              </div>
             </div>
 
-          </ul>
+          </div>
         </div>
       </div>
     </section>

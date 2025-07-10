@@ -8,7 +8,7 @@ import { animated, useTransition } from 'react-spring'
 import Aos from 'aos'
 // import i18n from '../i18n'
 import { useTranslation } from 'react-i18next'
-import Helmets from './Helmets'
+// import Helmets from './Helmets'
 
 
  function App() {
@@ -44,7 +44,7 @@ import Helmets from './Helmets'
 
   return (
     <>
-      <Helmets />
+      {/* <Helmets /> */}
 
       <div className={style.wrapper}>
         <Heder />
