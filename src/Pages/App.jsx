@@ -24,9 +24,9 @@ import { useTranslation } from 'react-i18next'
 
   useEffect(() => {
     window.scroll(0, 0)
-  })
+    Aos.init()
+  }, [])
 
-  Aos.init()
 
   const transitions = useTransition(location, {
     from: {

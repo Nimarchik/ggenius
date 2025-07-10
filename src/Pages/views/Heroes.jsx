@@ -2,12 +2,10 @@ import { Link, useParams } from 'react-router';
 import style from '../../assets/style/index.module.css'
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Aos from 'aos';
 
 
 
 const Heroes = () => {
-  Aos.init()
 
   const [heroes, setHeroes] = useState([])
   const [value, setValue] = useState('')

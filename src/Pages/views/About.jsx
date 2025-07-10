@@ -8,7 +8,6 @@ import logoCup from '../../assets/pictures/About/cup-reward-svgrepo-com.svg'
 import insignia from '../../assets/pictures/About/insignia.png'
 import give from '../../assets/pictures/About/give.png'
 import trophy from '../../assets/pictures/About/trophy.png'
-import Aos from 'aos';
 import { Link } from 'react-router';
 import alpha from '../../assets/pictures/About/alpha.jpg'
 import fasha from '../../assets/pictures/About/fasha.jpeg'
@@ -16,7 +15,6 @@ import fasha from '../../assets/pictures/About/fasha.jpeg'
 
 
 const About = () => {
-  Aos.init()
   const { t } = useTranslation()
 
   return <>
