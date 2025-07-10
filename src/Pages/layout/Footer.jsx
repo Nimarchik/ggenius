@@ -5,8 +5,6 @@ import Aos from 'aos';
 
 
 const Footer = () => {
-  Aos.init()
-
   const { t } = useTranslation();
   const { l: lang } = useParams();
   const currentPath = location.pathname;
