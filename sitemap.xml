@@ -26,19 +26,19 @@
   </url>
 
   <!-- Страница героїв -->
-  <url>
+  <!-- <url>
     <loc>https://ggenius.gg/uk/Heroes</loc>
     <lastmod>2025-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
+  </url> -->
 
   <!-- Пример страницы героя по ID -->
-  <url>
+  <!-- <url>
     <loc>https://ggenius.gg/uk/PreviewHeroes/1</loc>
     <lastmod>2025-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
+  </url> -->
 
 </urlset>
