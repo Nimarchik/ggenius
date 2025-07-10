@@ -51,7 +51,7 @@ const Header = () => {
       <div className={style.container}>
         <nav className={style.nav}>
           <Link to={`/${lang}/Home`} className={style.navLogo} aria-label='link to the Home'>
-            <img alt="logo" className={style.logoSvg} src={logo} />
+            <h1 className={style.logoSvg}>GGenius</h1>
           </Link>
 
           <div className={!menu ? style.navLinksListActive : style.navLinksList}>

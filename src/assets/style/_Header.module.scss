@@ -25,9 +25,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .logoSvg {
-  width: 159px;
-  height: 57px;
+  font-family: $sansation;
+  font-size: 40px;
+  font-weight: 500;
+  color: $colorGold;
 }
 
 .navLinksList,

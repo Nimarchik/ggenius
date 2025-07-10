@@ -108,8 +108,10 @@ select {
 }
 
 .logoSvg {
-  width: 159px;
-  height: 57px;
+  font-family: "Sansation", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #f9d58e;
 }
 
 .navLinksList,
