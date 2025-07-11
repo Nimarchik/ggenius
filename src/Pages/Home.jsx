@@ -1,31 +1,17 @@
 
 import style from '../assets/style/index.module.css'
-
 import ggenius from '../assets/pictures/Home/ggenius.webp'
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
-// import Helmets from './Helmets';
-
-
+import Helmets from './Helmets';
 
 
 const Home = () => {
   const { t } = useTranslation()
-  useEffect(() => {
-
-    const setVh = () => {
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    };
-    setVh();
-    window.addEventListener('resize', setVh);
-    return () => window.removeEventListener('resize', setVh);
-  }, []);
 
   return <>
 
-    {/* <Helmets titleKey='homes.title' descKey='homes.description' /> */}
+    <Helmets titleKey='homes.title' descKey='homes.description' />
 
     <section className={style.home}>
       <div className={style.container}>
@@ -160,7 +146,7 @@ const Home = () => {
                   <p className={style.roadmapWrapperTimeLineCompleatedSub}>
                     {t('roadmapWrapperTimeLineCompleatedSub')}
                   </p>
-                  <div className={style.progressbar} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div className={style.progressbar}>
                     <div className={style.progressFill}></div>
 
                   </div>
@@ -180,7 +166,7 @@ const Home = () => {
                   <p className={style.roadmapWrapperTimeLineCurrentSub}>
                     {t('roadmapWrapperTimeLineCurrentSub')}
                   </p>
-                  <div className={style.progressbarCurrent} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div className={style.progressbarCurrent}>
                     <div className={style.progressFillCurrent}></div>
 
                   </div>
@@ -200,7 +186,7 @@ const Home = () => {
                   <p className={style.roadmapWrapperTimeLineFutureSub}>
                     {t('roadmapWrapperTimeLineFuture1Sub')}
                   </p>
-                  <div className={style.progressbar} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div className={style.progressbar} >
                     <div className={style.progressFillFuture1}></div>
 
                   </div>
@@ -220,7 +206,7 @@ const Home = () => {
                   <p className={style.roadmapWrapperTimeLineFutureSub}>
                     {t('roadmapWrapperTimeLineFuture2Sub')}
                   </p>
-                  <div className={style.progressbar} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div className={style.progressbar} >
                     <div className={style.progressFillFuture2}></div>
 
                   </div>
@@ -240,7 +226,7 @@ const Home = () => {
                   <p className={style.roadmapWrapperTimeLineFutureSub}>
                     {t('roadmapWrapperTimeLineFuture3Sub')}
                   </p>
-                  <div className={style.progressbar} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                  <div className={style.progressbar} >
                     <div className={style.progressFillFuture3}></div>
 
                   </div>

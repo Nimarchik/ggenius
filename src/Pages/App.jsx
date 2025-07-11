@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { Outlet, useLocation, useParams } from 'react-router'
 
 import style from '../assets/style/index.module.css'
@@ -8,7 +8,7 @@ import { animated, useTransition } from 'react-spring'
 import Aos from 'aos'
 // import i18n from '../i18n'
 import { useTranslation } from 'react-i18next'
-// import Helmets from './Helmets'
+import Helmets from './Helmets'
 
 
 function App() {
@@ -20,18 +20,13 @@ function App() {
     if (lang && i18n.language !== lang) {
       i18n.changeLanguage(lang);
     }
-  }, [lang, i18n, location.pathname]); // важно!
+  }, [lang, i18n, location.pathname]);
 
   useEffect(() => {
     window.scroll(0, 0)
   }, [])
 
-  Aos.init({
-    disable: function () {
-      // отключить на мобильных устройствах с плохой производительностью
-      return window.innerWidth < 768;
-    }
-  });
+  Aos.init()
 
 
   const transitions = useTransition(location, {
@@ -50,7 +45,7 @@ function App() {
 
   return (
     <>
-      {/* <Helmets /> */}
+      <Helmets />
 
       <div className={style.wrapper}>
         <Heder />
