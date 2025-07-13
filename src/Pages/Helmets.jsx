@@ -16,7 +16,8 @@ const Helmets = ({ titleKey = 'meta.title', descKey = 'meta.description' }) => {
     <meta property="og:type" content="website" />
     <meta name="google-site-verification" content="e8cZ7JXTTYmpoCGCTEgfCeYSvBHT3yiFmNJLYv7nY_Y" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Революційний інтерфейс для кіберспортивної спільноти MLBB! AI Cards Hub - це інтерактивна система карток, які живуть, реагують на дотик та надають персоналізовані AI-поради." />
+    <meta property="og:description" content="Розумний Telegram-бот, який допоможе тобі грати краще.
+GGenius підкаже кращих героїв, ефективні збірки, контрпіки і не дасть загубитися новачку в світі MLBB." />
 
     <link rel="canonical" href="https://ggenius.gg/" />
     <link rel="alternate" hreflang="uk" href="https://ggenius.gg/" />
@@ -27,7 +28,8 @@ const Helmets = ({ titleKey = 'meta.title', descKey = 'meta.description' }) => {
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://ggenius.gg/" />
     <meta property="twitter:title" content="GGenius" />
-    <meta property="twitter:description" content="Революційний інтерфейс для кіберспортивної спільноти MLBB! AI Cards Hub - це інтерактивна система карток, які живуть, реагують на дотик та надають персоналізовані AI-поради." />
+    <meta property="twitter:description" content="Розумний Telegram-бот, який допоможе тобі грати краще.
+GGenius підкаже кращих героїв, ефективні збірки, контрпіки і не дасть загубитися новачку в світі MLBB." />
     <meta property="twitter:image" content="https://ggenius.gg/logo.webp" />
     <link rel="icon" href="/preview.webp" />
 

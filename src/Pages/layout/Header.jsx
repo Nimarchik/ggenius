@@ -5,16 +5,14 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
-
 const Header = () => {
-  const [menu, setMenu] = useState(false)
 
+  const [menu, setMenu] = useState(false)
   const location = useLocation();
   const currentPath = location.pathname;
-
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
   const { l: lang } = useParams();
+  const navigate = useNavigate();
 
   const [value, setValue] = useState(() => localStorage.getItem('value') || 'uk');
 
@@ -61,8 +59,11 @@ const Header = () => {
                 </Link>
               </li>
               <li className={style.navListItem}>
-                {/* to={`/${lang}/Heroes`} */}
-                <Link aria-label='link to the heroes page' onClick={e => e.preventDefault()} className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
+                {/*
+                 onClick = { e => e.preventDefault()} 
+                to={`/${lang}/Heroes`}
+                 */}
+                <Link onClick={e => e.preventDefault()} aria-label='link to the heroes page' className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('heroes')}
                 </Link>
               </li>

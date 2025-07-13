@@ -16,9 +16,12 @@
 }
 
 .heroesList {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
+  margin-bottom: 50px;
 }
 
 .heroesListItem {
@@ -59,7 +62,7 @@
 }
 .heroesWrapperBody {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .heroesWrapperBodyFilter {
@@ -86,8 +89,6 @@
   color: $colorGold;
   transition: all 0.4s;
 
-  
-
   &::before {
     cursor: pointer;
     content: "";
@@ -101,7 +102,6 @@
     border: 1px solid $colorGold;
 
     transition: all 0.4s;
-    
   }
 
   input[type="checkbox"] {
@@ -132,12 +132,38 @@
 
 .heroesWrapperBodyFilterLableSun {
   color: $color;
-  transition: all .4s;
-
+  transition: all 0.4s;
 }
 
 .heroesWrapperBodyFilterLableSunActive {
   color: $colorGold;
+  transition: all 0.4s;
+}
+
+.pagination {
+  display: flex;
+  width: 400px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.activePageButton,
+.pageButton {
+  cursor: pointer;
+  font-size: 25px;
   transition: all .4s;
 }
 
+.activePageButton {
+  color: $colorGold;
+}
+
+.pageButton {
+  color: $color;
+  
+  &:hover {
+    color: $colorGold;
+    text-shadow: 0 0 10px $colorGold;
+
+  }
+}

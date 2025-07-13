@@ -8,40 +8,64 @@ import { useTranslation } from 'react-i18next';
 const Heroes = () => {
 
   const [heroes, setHeroes] = useState([])
+  const [heroImg, setHeroImg] = useState('')
   const [value, setValue] = useState('')
   const { t } = useTranslation();
   const { l: lang } = useParams();
+  const [loading, setLoading] = useState(true)
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 15;
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const visibleHeroes = heroes.slice(startIndex, endIndex);
 
 
 
   useEffect(() => {
-    const api = 'http://localhost/server/heroes/index.php'
-    fetch(api)
-      .then(response => {
-        // console.log(response);
-        // if (!response.ok) {
-        //   throw new Error('Ошибка сети или сервера');
-        // }
-        return response.json();
-      })
-      .then(data => {
-        setHeroes(data.data);
-        console.log(data.data);
-        localStorage.setItem('img', data.data[0].key)
+    const cacheKey = 'heroes_cache';
+    const cacheExpiration = 1000 * 60 * 5; // 5 минут
 
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+      const parsed = JSON.parse(cached);
+      const now = new Date().getTime();
+
+      if (now - parsed.timestamp < cacheExpiration) {
+        setHeroes(parsed.data);
+        setLoading(false);
+        return; // завершаем, если кэш валиден
+      }
+    }
+
+    const api = 'http://localhost/server/heroes/index.php';
+    fetch(api)
+      .then(res => res.json())
+      .then(data => {
+        const heroesData = data.data.reverse();
+
+        setHeroes(heroesData);
+        localStorage.setItem(
+          cacheKey,
+          JSON.stringify({
+            data: heroesData,
+            timestamp: new Date().getTime()
+          })
+        );
+        setLoading(false);
       })
       .catch(error => {
         console.error('Ошибка при выполнении запроса:', error);
       });
-
   }, []);
+  
 
   console.log(value);
 
-  const handleRoleChange = (e) => {
-    const role = e.target.value;
-    setValue(prev => prev === role ? null : role); // включить/отключить
-  };
+  // const handleRoleChange = (e) => {
+  //   const role = e.target.value;
+  //   setValue(prev => prev === role ? null : role); // включить/отключить
+  // };
 
 
 
@@ -49,8 +73,16 @@ const Heroes = () => {
   //   ? heroes.filter((item, index) => item.heroid === value)
   //   : heroes;
 
+  useEffect(() => {
+    localStorage.setItem('img', heroImg)
+  }, [heroImg])
 
 
+  if (loading) return <div className={style.loading}>
+    <div className={style.spin}>
+      <span className={style.spinSpan}></span>
+    </div>
+  </div>
 
   return <>
     <section className={style.heroes}>
@@ -69,7 +101,7 @@ const Heroes = () => {
           </div>
 
           <div className={style.heroesWrapperBody}>
-            <div className={style.heroesWrapperBodyFilter}>
+            {/* <div className={style.heroesWrapperBodyFilter}>
               <h2 className={style.heroesWrapperBodyFilterTitle}>
                 {t('heroesWrapperBodyFilterTitle')}
               </h2>
@@ -127,26 +159,26 @@ const Heroes = () => {
                 </p>
                 <input className={style.heroesWrapperBodyFilterLableImp} type='checkbox' value='assassin' id='assassin' checked={value === 'assassin'} onChange={handleRoleChange} />
               </label>
-            </div>
+            </div> */}
 
 
             <ul className={style.heroesList}>
               {
-                heroes.map((item) => (
+                visibleHeroes.map(item => (
 
-                  <li  key={item.heroid} className={style.heroesListItem} >
+
+                  <li key={item.heroid} className={style.heroesListItem} >
                     <Link
                       to={`/${lang}/PreviewHeroes/${item.heroid}`}
                       state={{ item }} className={style.heroesListItemLink}>
-                      
-                      <img className={style.heroesListItemImg} src={item.key} alt="" />
+
+                      <img className={style.heroesListItemImg} src={item.key} alt="hero pictures" onClick={() => setHeroImg(item.key)} />
                       <div className={style.heroesListItemCont}>
                         {/* <p className={style.heroesListItemContRole}>
                           {t(item.data[index].name)}
                         </p> */}
                         <h2 className={style.heroesListItemTitle}>
                           {t(item.name)}
-
                         </h2>
                       </div>
                     </Link>
@@ -154,6 +186,18 @@ const Heroes = () => {
                 ))
               }
             </ul>
+            <div className={style.pagination}>
+              {Array.from({ length: Math.ceil(heroes.length / itemsPerPage) }, (_, i) => (
+                <button
+                  key={i}
+                  className={currentPage === i + 1 ? style.activePageButton : style.pageButton}
+                  onClick={() => setCurrentPage(i + 1)}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+
           </div>
         </div>
       </div>
