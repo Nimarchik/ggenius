@@ -24,7 +24,7 @@ const Heroes = () => {
 
   useEffect(() => {
     const cacheKey = 'heroes_cache';
-    const cacheExpiration = 1000 * 60 * 5; // 5 минут
+    const cacheExpiration = 1000 * 60 * 5; 
 
     const cached = localStorage.getItem(cacheKey);
     if (cached) {
@@ -34,7 +34,7 @@ const Heroes = () => {
       if (now - parsed.timestamp < cacheExpiration) {
         setHeroes(parsed.data);
         setLoading(false);
-        return; // завершаем, если кэш валиден
+        return; 
       }
     }
 
@@ -61,17 +61,6 @@ const Heroes = () => {
   
 
   console.log(value);
-
-  // const handleRoleChange = (e) => {
-  //   const role = e.target.value;
-  //   setValue(prev => prev === role ? null : role); // включить/отключить
-  // };
-
-
-
-  // const filteredHeroes = value
-  //   ? heroes.filter((item, index) => item.heroid === value)
-  //   : heroes;
 
   useEffect(() => {
     localStorage.setItem('img', heroImg)
