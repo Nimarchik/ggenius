@@ -1719,4 +1719,8 @@ select {
   .previewWrapperContListItemSubs {
     width: 100%;
   }
+  .previewWrapperContInner {
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=index.module.css.map */

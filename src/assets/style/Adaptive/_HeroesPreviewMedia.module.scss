@@ -41,6 +41,11 @@
   .previewWrapperContListItemSubs {
     width: 100%;
   }
+
+  .previewWrapperContInner {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 414px) {
