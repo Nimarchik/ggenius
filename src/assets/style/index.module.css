@@ -1139,7 +1139,8 @@ select {
 }
 
 .previewWrapperContInf2Title,
-.previewWrapperContInf1Title {
+.previewWrapperContInf1Title,
+.previewWrapperContInf3Title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1172,6 +1173,10 @@ select {
 
 .spanss {
   color: red;
+}
+
+.previewWrapperContInf2Sub {
+  font-size: 25px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1705,8 +1710,8 @@ select {
 }
 @media screen and (max-width: 540px) {
   .previewWrapperContImg {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
   }
   .previewWrapperContList {
     gap: 35px;
@@ -1729,9 +1734,44 @@ select {
     height: 100vh;
   }
   .spin {
-    top: 50%;
+    top: 45%;
     left: 30%;
     width: 150px;
     height: 150px;
+  }
+  .previewWrapperTitle {
+    font-size: 40px;
+  }
+  .previewWrapperContInf2Title {
+    font-size: 40px;
+  }
+  .previewWrapperContInf2Sub {
+    font-size: 25px;
+  }
+  .previewWrapperCont {
+    gap: 25px;
+  }
+  .previewWrapperSkillsTitle {
+    font-size: 45px;
+  }
+  .previewWrapperContListItemImg {
+    width: 85px;
+    height: 85px;
+  }
+  .previewWrapperContListItemContTitle {
+    font-size: 30px;
+  }
+  .previevContInf3ListItemIcon {
+    width: 95px;
+    height: 95px;
+  }
+  .previevContInf3ListItemIconName {
+    font-size: 20px;
+  }
+  .previewWrapperContInf2Title {
+    margin-bottom: 0;
+  }
+  .previewWrapperContInf3Title {
+    margin-bottom: 30px;
   }
 }/*# sourceMappingURL=index.module.css.map */

@@ -99,7 +99,7 @@ const PreviewHeroes = () => {
                 </p>
               </div>
               <div className={style.previewWrapperContInf3}>
-                <h2 className={style.previewWrapperContInf2Title}>{t('previewWrapperContInf3Title')}</h2>
+                <h2 className={style.previewWrapperContInf3Title}>{t('previewWrapperContInf3Title')}</h2>
                 <div className={style.previewWrapperContInf3List}>
                   {
                     heroesDetail.gear.out_pack.map((pack, index) => (

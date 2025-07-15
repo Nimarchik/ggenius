@@ -132,7 +132,8 @@
 
 
 .previewWrapperContInf2Title,
-.previewWrapperContInf1Title {
+.previewWrapperContInf1Title,
+.previewWrapperContInf3Title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,3 +167,8 @@
 .spanss {
   color: red;
 }
+
+.previewWrapperContInf2Sub {
+  font-size: 25px;
+}
+
