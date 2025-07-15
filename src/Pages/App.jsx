@@ -9,7 +9,6 @@ import Aos from 'aos'
 import { useTranslation } from 'react-i18next'
 // import Helmets from './Helmets'
 
-
 function App() {
   const { i18n } = useTranslation();
   const { l: lang } = useParams();
@@ -39,9 +38,7 @@ function App() {
       transform: 'scale(1)',
     },
   })
-
-
-
+  
   return (
     <>
       {/* <Helmets /> */}
