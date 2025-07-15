@@ -63,7 +63,9 @@ const Header = () => {
                  onClick = { e => e.preventDefault()} 
                 to={`/${lang}/Heroes`}
                  */}
-                <Link to={`/${lang}/Heroes`}  aria-label='link to the heroes page' className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
+                <Link to={`/${lang}/Heroes`}  aria-label='link to the heroes page' 
+                  onClick={() => setMenu(!menu)}
+                className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('heroes')}
                 </Link>
               </li>
