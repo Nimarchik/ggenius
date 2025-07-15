@@ -38,9 +38,9 @@ const Heroes = () => {
       }
     }
 
-    // const api = 'http://localhost/server/heroes/index.php';
+    const api = 'http://localhost/server/heroes/index.php';
 
-    const api = 'https://ggenius-api.infy.uk/api/heroes/index.php?nocache=' + Date.now()
+    // const api = 'https://ggenius-api.infy.uk/api/heroes/index.php?nocache=' + Date.now()
     fetch(api)
       .then(res => res.json())
       .then(data => {
