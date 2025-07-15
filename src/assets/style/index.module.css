@@ -208,6 +208,12 @@ select {
   gap: 50px;
 }
 
+.footerLogo {
+  font-family: "Sansation", sans-serif;
+  font-size: 55px;
+  color: #f9d58e;
+}
+
 .footerWrapperList {
   display: flex;
   align-items: center;
@@ -275,10 +281,10 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 220px;
   height: 250px;
   padding: 30px 10px;
-  border-radius: 5px;
+  border-radius: 15px;
   transition: all 0.4s;
 }
 .heroesListItem:hover {
@@ -400,7 +406,11 @@ select {
 }
 
 .activePageButton {
-  color: #f9d58e;
+  padding: 10px 15px;
+  color: #000;
+  background-color: #f9d58e;
+  border: 1px solid #f9d58e;
+  font-size: 30px;
 }
 
 .pageButton {
@@ -1162,6 +1172,38 @@ select {
   color: red;
 }
 
+.blog {
+  padding: 200px 0 200px;
+}
+
+.blogWrapperTitle {
+  font-size: 55px;
+  color: #f9d58e;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.blogWrapperPatches {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.blogWrapperPatchesInnerTitle {
+  font-size: 35px;
+  color: #f9d58e;
+  margin-bottom: 5px;
+}
+
+.blogWrapperPatchesInnerGroupTime {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.blogWrapperPatchesInnerSub {
+  color: #8b8b8b;
+}
+
 @media screen and (max-width: 1280px) {
   .header {
     height: 90px;
@@ -1508,7 +1550,9 @@ select {
     flex-direction: column;
   }
   .footerLogo {
-    display: block;
+    display: none;
+    visibility: hidden;
+    font-size: 50px;
     margin: 0 auto;
     text-align: center;
   }
@@ -1516,6 +1560,8 @@ select {
     justify-content: space-around;
   }
   .footerWrapperList {
+    display: none;
+    visibility: hidden;
     flex-direction: column;
     gap: 20px;
   }

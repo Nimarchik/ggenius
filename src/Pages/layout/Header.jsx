@@ -63,7 +63,7 @@ const Header = () => {
                  onClick = { e => e.preventDefault()} 
                 to={`/${lang}/Heroes`}
                  */}
-                <Link onClick={e => e.preventDefault()} aria-label='link to the heroes page' className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
+                <Link to={`/${lang}/Heroes`}  aria-label='link to the heroes page' className={currentPath.endsWith('Heroes') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('heroes')}
                 </Link>
               </li>
@@ -73,7 +73,10 @@ const Header = () => {
                 </Link>
               </li>
               <li className={style.navListItem}>
-                <Link aria-label='link to the Guides page' onClick={e => e.preventDefault()} className={style.navListItemLink}>
+              {/*  
+              to={`/${lang}/Blog`}
+              */}
+                <Link onClick={e => e.preventDefault()} aria-label='link to the Guides page' className={currentPath.endsWith('Blog') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('Guides')}
                 </Link>
               </li>

@@ -10,6 +10,7 @@ import Heroes from './Pages/views/Heroes.jsx'
 import Home from './Pages/Home.jsx'
 import About from './Pages/views/About.jsx'
 import PreviewHeroes from './Pages/PreviewHeroes.jsx'
+import Blog from './Pages/views/Blog.jsx';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: 'PreviewHeroes/:id',
         element: <PreviewHeroes />
+      },
+      {
+        path: 'Blog',
+        element: <Blog />
       }
     ]
   }

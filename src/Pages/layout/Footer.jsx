@@ -16,10 +16,8 @@ const Footer = () => {
         <div className={style.container}>
           <div className={style.footerWrapper}>
             <div className={style.footerWrapperLogoGroup}>
-              <Link aria-label='logo and link to the Home page' to={`/`} className={style.footerLogo}>
-                <svg className={style.logoSvg} xmlns="http:;//www.w3.org/2000/svg" width="326" height="99" viewBox="0 0 326 99">
-                  <text id="GGenius" xmlSpace="preserve" x="3.148438" y="77" fontFamily="Arial" fontSize="80" fill="gold">GGenius</text>
-                </svg>
+              <Link to={`/${lang}/Home`} className={style.footerLogo} aria-label='link to the Home'>
+               GGenius
               </Link>
               <ul className={style.footerWrapperLogoGroupList}>
                 <li className={style.footerWrapperLogoGroupListItem}>

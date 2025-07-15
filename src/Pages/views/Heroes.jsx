@@ -9,22 +9,22 @@ const Heroes = () => {
 
   const [heroes, setHeroes] = useState([])
   const [heroImg, setHeroImg] = useState('')
-  const [value, setValue] = useState('')
   const { t } = useTranslation();
   const { l: lang } = useParams();
   const [loading, setLoading] = useState(true)
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(localStorage.getItem("currentPage"));
   const itemsPerPage = 15;
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const visibleHeroes = heroes.slice(startIndex, endIndex);
 
+  localStorage.setItem('currentPage', currentPage)
 
 
   useEffect(() => {
     const cacheKey = 'heroes_cache';
-    const cacheExpiration = 1000 * 60 * 5; 
+    const cacheExpiration = 1000 * 60 * 5;
 
     const cached = localStorage.getItem(cacheKey);
     if (cached) {
@@ -34,15 +34,18 @@ const Heroes = () => {
       if (now - parsed.timestamp < cacheExpiration) {
         setHeroes(parsed.data);
         setLoading(false);
-        return; 
+        return;
       }
     }
 
-    const api = 'http://localhost/server/heroes/index.php';
+    // const api = 'http://localhost/server/heroes/index.php';
+
+    const api = 'https://ggenius-api.infy.uk/api/heroes/index.php?nocache=' + Date.now()
     fetch(api)
       .then(res => res.json())
       .then(data => {
         const heroesData = data.data.reverse();
+        console.log(data);
 
         setHeroes(heroesData);
         localStorage.setItem(
@@ -58,9 +61,6 @@ const Heroes = () => {
         console.error('Ошибка при выполнении запроса:', error);
       });
   }, []);
-  
-
-  console.log(value);
 
   useEffect(() => {
     localStorage.setItem('img', heroImg)
@@ -159,6 +159,7 @@ const Heroes = () => {
                   <li key={item.heroid} className={style.heroesListItem} >
                     <Link
                       to={`/${lang}/PreviewHeroes/${item.heroid}`}
+
                       state={{ item }} className={style.heroesListItemLink}>
 
                       <img className={style.heroesListItemImg} src={item.key} alt="hero pictures" onClick={() => setHeroImg(item.key)} />
@@ -179,7 +180,7 @@ const Heroes = () => {
               {Array.from({ length: Math.ceil(heroes.length / itemsPerPage) }, (_, i) => (
                 <button
                   key={i}
-                  className={currentPage === i + 1 ? style.activePageButton : style.pageButton}
+                  className={currentPage == i + 1 ? style.activePageButton : style.pageButton}
                   onClick={() => setCurrentPage(i + 1)}
                 >
                   {i + 1}

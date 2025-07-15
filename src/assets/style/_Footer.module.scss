@@ -9,6 +9,12 @@
   gap: 50px;
 }
 
+.footerLogo {
+  font-family: $sansation;
+  font-size: 55px;
+  color: $colorGold;
+}
+
 .footerWrapperList {
   display: flex;
   // flex-direction: column;

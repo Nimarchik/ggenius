@@ -14,16 +14,22 @@
   .footerWrapper {
     flex-direction: column;
   }
+
   .footerLogo {
-    display: block;
+    display: none;
+    visibility: hidden;
+    font-size: 50px;
     margin: 0 auto;
     text-align: center;
   }
 
   .footerWrapperLogoGroupList {
+    
     justify-content: space-around;
   }
   .footerWrapperList {
+    display: none;
+    visibility: hidden;
     flex-direction: column;
     gap: 20px;
   }

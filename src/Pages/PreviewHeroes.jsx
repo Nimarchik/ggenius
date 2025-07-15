@@ -32,10 +32,15 @@ const PreviewHeroes = () => {
       }
     }
 
-    fetch('http://localhost/server/Heroes_Detail/index.php', {
+    // const api = 'http://localhost/server/Heroes_Detail/index.php'
+    const api = 'https://ggenius-api.infy.uk/api/Heroes_Detail/index.php'
+
+
+    fetch(api, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+
       },
       body: JSON.stringify({ id: id }),
     })
