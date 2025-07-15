@@ -12,7 +12,7 @@ const Heroes = () => {
   const { t } = useTranslation();
   const { l: lang } = useParams();
   const [loading, setLoading] = useState(true)
-  const [currentPage, setCurrentPage] = useState(localStorage.getItem("currentPage"));
+  const [currentPage, setCurrentPage] = useState(localStorage.getItem("currentPage") || 1);
   const itemsPerPage = 15;
 
   const startIndex = (currentPage - 1) * itemsPerPage;
