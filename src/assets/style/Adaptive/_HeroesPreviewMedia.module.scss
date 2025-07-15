@@ -53,19 +53,10 @@
   }
   
   .spin {
-    position: absolute;
     top: 50%;
     left: 30%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border: 5px solid $color;
-    border-bottom-color: $colorGold;
-    border-radius: 50%;
-    animation: rotation 1s linear infinite;
+    width: 150px;
+    height: 150px;
   }
 }
 
