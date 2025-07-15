@@ -9,20 +9,12 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Домашняя страница на украинском -->
-  <url>
-    <loc>https://ggenius.gg/uk/Home</loc>
-    <lastmod>2025-07-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
   <!-- Страница "Про нас" -->
   <url>
     <loc>https://ggenius.gg/uk/About</loc>
     <lastmod>2025-07-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
 
   <!-- Страница героїв -->
@@ -30,15 +22,6 @@
     <loc>https://ggenius.gg/uk/Heroes</loc>
     <lastmod>2025-07-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-
-  <!-- Пример страницы героя по ID -->
-  <url>
-    <loc>https://ggenius.gg/uk/PreviewHeroes/1</loc>
-    <lastmod>2025-07-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
 </urlset>
