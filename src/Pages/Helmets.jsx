@@ -8,7 +8,6 @@ const Helmets = ({ titleKey = 'meta.title', descKey = 'meta.description' }) => {
   return <Helmet>
     <title>{t(titleKey)}</title>
     <meta name="description" content={t(descKey)} />
-
     <meta name="keywords" content="Mobile Legends, гайди, герої, турнір, кіберспорт, ggenius, GGenius, млбб, мобла, ггеніус, ггуніус, герои, гайды, киберспорт, mlbb,MLBB" />
     <meta property="og:image" content="https://ggenius.gg/logo.webp" />
     <meta property="og:title" content="Ggenius — AI-платформа для турниров" />

@@ -2,7 +2,7 @@ import { useParams } from "react-router";
 import { useTranslation } from "react-i18next";
 import style from '../assets/style/index.module.css'
 import { useEffect, useState } from "react";
-
+import Helmets from "./Helmets";
 
 
 const PreviewHeroes = () => {
@@ -80,7 +80,7 @@ const PreviewHeroes = () => {
   </div>
 
   return <>
-
+    <Helmets titleKey="Heroes.title" descKey="Heroes.description"/>
     <section className={style.preview}>
       <div className={style.container}>
         <div className={style.previewWrapper}>

@@ -11,7 +11,7 @@ import trophy from '../../assets/pictures/About/trophy.png'
 import { Link } from 'react-router';
 import alpha from '../../assets/pictures/About/alpha.jpg'
 import fasha from '../../assets/pictures/About/fasha.jpeg'
-// import Helmets from '../Helmets';
+import Helmets from '../Helmets';
 
 
 const About = () => {
@@ -19,7 +19,7 @@ const About = () => {
 
   return <>
 
-    {/* <Helmets titleKey='abouts.title' descKey='abouts.description' /> */}
+    <Helmets titleKey='abouts.title' descKey='abouts.description' />
 
     <section className={style.about}>
       <div className={style.container}>

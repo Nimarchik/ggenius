@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router';
 import style from '../../assets/style/index.module.css'
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
+import Helmets from '../Helmets';
 
 const Heroes = () => {
 
@@ -79,6 +79,8 @@ const Heroes = () => {
   </div>
 
   return <>
+    <Helmets titleKey='Heroes.title' descKey="Heroes.description" />
+
     <section className={style.heroes}>
       <div className={style.container}>
         <div className={style.heroesWrapper}>

@@ -3,7 +3,7 @@ import style from '../assets/style/index.module.css'
 import ggenius from '../assets/pictures/Home/ggenius.webp'
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
-// import Helmets from './Helmets';
+import Helmets from './Helmets';
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
 
   return <>
 
-    {/* <Helmets titleKey='homes.title' descKey='homes.description' /> */}
+    <Helmets titleKey='homes.title' descKey='homes.description' />
 
     <section className={style.home}>
       <div className={style.container}>
