@@ -33,7 +33,7 @@ const PreviewHeroes = () => {
     }
 
     // const api = 'http://localhost/server/Heroes_Detail/index.php'
-    const api = 'https://ggenius-api.infy.uk/api/Heroes_Detail/index.php' + Date.now()
+    const api = 'https://ggenius-api.onrender.com/heroDetail.php'
 
 
     fetch(api, {
