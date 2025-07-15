@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
-
 const Heroes = () => {
 
   const [heroes, setHeroes] = useState([])
@@ -20,6 +19,12 @@ const Heroes = () => {
   const visibleHeroes = heroes.slice(startIndex, endIndex);
 
   localStorage.setItem('currentPage', currentPage)
+
+  useEffect(() => {
+    if (currentPage) {
+      window.scroll(0, 0)
+    }
+  }, [currentPage])
 
 
   useEffect(() => {

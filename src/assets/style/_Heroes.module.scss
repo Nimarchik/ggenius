@@ -142,6 +142,7 @@
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 400px;
   justify-content: space-evenly;
   margin: 0 auto;

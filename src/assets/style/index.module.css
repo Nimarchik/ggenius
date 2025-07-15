@@ -25,6 +25,7 @@ html {
   font-weight: normal;
   font-size: 25px;
   color: #8b8b8b;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -393,6 +394,7 @@ select {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   width: 400px;
   justify-content: space-evenly;
   margin: 0 auto;
@@ -1172,38 +1174,6 @@ select {
   color: red;
 }
 
-.blog {
-  padding: 200px 0 200px;
-}
-
-.blogWrapperTitle {
-  font-size: 55px;
-  color: #f9d58e;
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.blogWrapperPatches {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.blogWrapperPatchesInnerTitle {
-  font-size: 35px;
-  color: #f9d58e;
-  margin-bottom: 5px;
-}
-
-.blogWrapperPatchesInnerGroupTime {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.blogWrapperPatchesInnerSub {
-  color: #8b8b8b;
-}
-
 @media screen and (max-width: 1280px) {
   .header {
     height: 90px;
@@ -1709,5 +1679,44 @@ select {
   .roadmapWrapperTimeLineCurrent,
   .roadmapWrapperTimeLineFuture {
     margin-left: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .pagination {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .previewWrapperCont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .previewWrapperContInf2Sub {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 912px) {
+  .previewWrapperContInf3List {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 540px) {
+  .previewWrapperContImg {
+    width: 200px;
+    height: 200px;
+  }
+  .previewWrapperContList {
+    gap: 35px;
+  }
+  .previewWrapperContListItem {
+    flex-direction: column;
+    height: inherit;
+    gap: 20px;
+  }
+  .previewWrapperContListItemSubs {
+    width: 100%;
   }
 }/*# sourceMappingURL=index.module.css.map */
