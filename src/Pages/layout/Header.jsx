@@ -78,7 +78,7 @@ const Header = () => {
               {/*  
               to={`/${lang}/Blog`}
               */}
-                <Link to={`/${lang}/Blog`} aria-label='link to the Guides page' className={currentPath.endsWith('Blog') ? style.navListItemLinkActive : style.navListItemLink}>
+                <Link to={`/${lang}/Blog`} onClick={() => setMenu(!menu)} aria-label='link to the Guides page' className={currentPath.endsWith('Blog') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('Guides')}
                 </Link>
               </li>
