@@ -1,0 +1,46 @@
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 912px) {
+}
+
+@media screen and (max-width: 768px) {
+  .blogWrapperPatchesInnerGroupImg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .blogWrapperPatchesInnerGroupTime {
+    height: 300px;
+    overflow-y: hidden;
+    transition: all 0.4s;
+  }
+  .blogWrapperPatchesInnerGroupShow {
+    display: block;
+    visibility: visible;
+    font-size: 25px;
+    color: $colorGold;
+    transition: all 0.4s;
+  }
+  .blogWrapperPatchesInnerGroupTimeActive {
+    // height: inherit;
+    transition: all 0.4s;
+  }
+
+
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 430px) {
+}
+
+@media screen and (max-width: 390px) {
+}
+@media screen and (max-width: 360px) {
+}

@@ -15,17 +15,46 @@
   gap: 40px;
 }
 
-.blogWrapperPatchesInnerTitle {
-  font-size: 35px;
-  color: $colorGold;
-  margin-bottom: 5px;
+.blogWrapperPatchesInnerGroup,
+.blogWrapperPatchesInnerGroupActive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.blogWrapperPatchesInnerGroupTime{
-  font-size: 20px;
+.blogWrapperPatchesInnerGroupImg {
+  margin-bottom: 20px;
+}
+
+.blogWrapperPatchesInnerGroupText {
+  margin-bottom: 20px;
+}
+
+.blogWrapperPatchesInnerTitle {
+  font-size: 40px;
+  color: $colorGold;
   margin-bottom: 10px;
+}
+
+.blogWrapperPatchesInnerGroupTextDate {
+  font-size: 25px;
+  color: $color;
+}
+
+.blogWrapperPatchesInnerGroupTime,
+.blogWrapperPatchesInnerGroupTimeActive {
+  font-size: 30px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
 }
 
 .blogWrapperPatchesInnerSub {
   color: $color;
+}
+
+.blogWrapperPatchesInnerGroupShow {
+  display: none;
+  visibility: hidden;
 }

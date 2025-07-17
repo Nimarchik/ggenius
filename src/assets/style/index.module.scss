@@ -97,7 +97,7 @@ select {
 @import "./Home.module";
 @import "./About.module";
 @import "./PreviewHeroes.module";
-// @import './Blog.module';
+@import './Blog.module';
 
 // Adaptiv
 @import "./Adaptive/HeaderMedia.module";
@@ -106,3 +106,4 @@ select {
 @import "./Adaptive/AboutMedia.module";
 @import './Adaptive/HeroesMedia.module';
 @import './Adaptive/HeroesPreviewMedia.module';
+@import './Adaptive/BlogMedia.module';

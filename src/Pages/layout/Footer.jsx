@@ -17,7 +17,7 @@ const Footer = () => {
           <div className={style.footerWrapper}>
             <div className={style.footerWrapperLogoGroup}>
               <Link to={`/${lang}/Home`} className={style.footerLogo} aria-label='link to the Home'>
-               GGenius
+                GGenius
               </Link>
               <ul className={style.footerWrapperLogoGroupList}>
                 <li className={style.footerWrapperLogoGroupListItem}>
@@ -68,7 +68,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className={style.navListItem}>
-                <Link aria-label='link to the Guides page' className={style.navListItemLink} onClick={e => e.preventDefault()}>
+                <Link to={`/${lang}/Blog`} aria-label='link to the Guides page' className={currentPath.endsWith('Blog') ? style.navListItemLinkActive : style.navListItemLink}>
                   {t('Guides')}
                 </Link>
               </li>
