@@ -228,12 +228,16 @@
 		"description": "Інформація про проєкт Ggenius."
 	},
 	"Heroes": {
-		"title":"Герої | GGenius",
-		"description":"Інформація про Героїв."
+		"title": "Герої | GGenius",
+		"description": "Інформація про Героїв."
+	},
+	"Blog": {
+		"title": "Блоги | GGenius",
+		"description": "Блоги від GGenius"
 	},
 	"keywords": "Mobile Legends, гайди, герої, турнір, кіберспорт, ggenius, GGenius, млбб, мобла, ггеніус, ггуніус, герои, гайды, киберспорт, mlbb,MLBB",
 	"descript": "Створюй, Перемогай, покращуйся з Ggenius.",
-	"": "",
+	"blogWrapperTitle": "Блоги",
 	"": "",
 	"": "",
 	"": "",

@@ -228,7 +228,13 @@
 		"title": "About us | GGenius",
 		"description": "Information about the Ggenius project."
 	},
+	"Blog": {
+		"title": "Blogs | GGenius",
+		"description": "Blogs from GGenius"
+	},
+
 	"descript": "Create, win, improve with Ggenius.",
+	"blogWrapperTitle": "Blogs",
 	"": "",
 	"": "",
 	"": "",
