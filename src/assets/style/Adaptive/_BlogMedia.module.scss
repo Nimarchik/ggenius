@@ -16,6 +16,7 @@
 @media screen and (max-width: 540px) {
   .blogWrapperPatchesInnerGroupTime {
     height: 300px;
+    font-size: 20px;
     overflow-y: hidden;
     transition: all 0.4s;
   }
@@ -27,11 +28,18 @@
     transition: all 0.4s;
   }
   .blogWrapperPatchesInnerGroupTimeActive {
-    // height: inherit;
+    height: 2200px;
+    font-size: 20px;
     transition: all 0.4s;
   }
 
+  .blogWrapperPatchesInnerGroupTextDate {
+    font-size: 23px;
+  }
 
+  .blogWrapperPatchesInnerTitle {
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 414px) {

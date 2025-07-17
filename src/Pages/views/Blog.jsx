@@ -38,25 +38,27 @@ const Blog = () => {
             {
               patches.map((item) => (
                 <div onClick={() => setShow(!show)} className={style.blogWrapperPatchesInner} key={item.id}>
-                  <div className={style.blogWrapperPatchesInnerGroup}>
-                    <img className={style.blogWrapperPatchesInnerGroupImg} src={item.image} alt="" />
-                    <div className={style.blogWrapperPatchesInnerGroupText}>
-                      <h1 className={style.blogWrapperPatchesInnerTitle}>{item.title}</h1>
-                      <p className={style.blogWrapperPatchesInnerGroupTextDate}>
-                        {item.date}
+                  <div data-aos="fade-down">
+                    <div className={style.blogWrapperPatchesInnerGroup}>
+                      <img className={style.blogWrapperPatchesInnerGroupImg} src={item.image} alt="" />
+                      <div className={style.blogWrapperPatchesInnerGroupText}>
+                        <h1 className={style.blogWrapperPatchesInnerTitle}>{item.title}</h1>
+                        <p className={style.blogWrapperPatchesInnerGroupTextDate}>
+                          {item.date}
+                        </p>
+                      </div>
+                      <p className={show ? style.blogWrapperPatchesInnerGroupTimeActive : style.blogWrapperPatchesInnerGroupTime}>
+                        {item.content}
+                      </p>
+                      <p className={style.blogWrapperPatchesInnerGroupShow}>
+                        {show ? 'Згорнути ⬆️' : 'Розгорнути ⬇️'}
                       </p>
                     </div>
-                    <p className={show ? style.blogWrapperPatchesInnerGroupTimeActive : style.blogWrapperPatchesInnerGroupTime}>
-                      {item.content}
-                    </p>
-                    <p className={style.blogWrapperPatchesInnerGroupShow}>
-                      {show ? 'Згорнути ⬆️' : 'Розгорнути ⬇️'}
+                    <p className={style.blogWrapperPatchesInnerSub}>
+                      {item.changeLogs
+                      }
                     </p>
                   </div>
-                  <p className={style.blogWrapperPatchesInnerSub}>
-                    {item.changeLogs
-                    }
-                  </p>
                 </div>
               ))
             }
