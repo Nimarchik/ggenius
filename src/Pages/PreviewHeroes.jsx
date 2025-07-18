@@ -1,8 +1,10 @@
 import { useParams } from "react-router";
 import { useTranslation } from "react-i18next";
 import style from '../assets/style/index.module.css'
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Helmets from "./Helmets";
+import useTranslatedList from '../hooks/useTranslatedList';
+import { translateWithCache } from "../translateWithCache";
 
 
 const PreviewHeroes = () => {
@@ -49,6 +51,7 @@ const PreviewHeroes = () => {
         setHeroesDetail(data.data);
         setLoading(false);
 
+
         localStorage.setItem(
           cacheKey,
           JSON.stringify({
@@ -62,7 +65,7 @@ const PreviewHeroes = () => {
       });
 
   }, [id, lang]);
-  
+
 
   const clearText = (htmlString) => {
     if (!htmlString) return '';
@@ -72,6 +75,45 @@ const PreviewHeroes = () => {
 
     return converted;
   };
+  console.log(heroesDetail);
+
+
+
+
+  const langCode = localStorage.getItem('value')
+
+  function useTranslatedMap(list, lang) {
+    const normalizedList = useMemo(() => {
+      if (!list) return [];
+      return list.filter(Boolean);
+    }, [list]);
+
+    const translatedList = useTranslatedList(normalizedList, lang);
+
+    return useMemo(() => {
+      const map = {};
+      normalizedList.forEach((item, i) => {
+        map[item] = translatedList[i];
+      });
+      return map;
+    }, [normalizedList, translatedList]);
+  }
+
+  // Получаем списки для перевода
+  const skillNames = useMemo(() => heroesDetail?.skill?.skill?.map(s => s?.name) || [], [heroesDetail]);
+  const deskNames = useMemo(() => heroesDetail?.skill?.skill?.map(d => d?.des) || [], [heroesDetail]);
+  const packNames = useMemo(() => heroesDetail?.gear?.out_pack?.map(q => q?.equip?.name) || [], [heroesDetail])
+
+  // Получаем мапы переводов
+  const translatedMap = useTranslatedMap(skillNames, langCode);
+  const translatedMapDesk = useTranslatedMap(deskNames, langCode);
+  const translatedMapPack = useTranslatedMap(packNames, langCode)
+
+
+
+
+
+
 
   if (loading) return <div className={style.loading}>
     <div className={style.spin}>
@@ -80,7 +122,7 @@ const PreviewHeroes = () => {
   </div>
 
   return <>
-    <Helmets titleKey="Heroes.title" descKey="Heroes.description"/>
+    <Helmets titleKey="Heroes.title" descKey="Heroes.description" />
     <section className={style.preview}>
       <div className={style.container}>
         <div className={style.previewWrapper}>
@@ -106,7 +148,11 @@ const PreviewHeroes = () => {
 
                       <div key={index} className={style.previevContInf3ListItem}>
                         <img src={pack.equip.icon} alt="" className={style.previevContInf3ListItemIcon} />
-                        <p className={style.previevContInf3ListItemIconName}>{pack.equip.name}</p>
+                        <p className={style.previevContInf3ListItemIconName}>
+                          {/* {pack.equip.name} */}
+                          {translatedMapPack[pack.equip.name] || pack.equip.name}
+
+                        </p>
                       </div>
                     ))
                   }
@@ -121,17 +167,20 @@ const PreviewHeroes = () => {
               {t('previewWrapperSkillsTitle')}
             </h3>
             <ul className={style.previewWrapperContList}>
+
               {
                 heroesDetail.skill.skill.map((skill, index) => (
                   <li key={index} className={style.previewWrapperContListItem}>
                     <div className={style.previewWrapperContListItemCont}>
                       <img className={style.previewWrapperContListItemImg} src={skill.icon} alt="" />
-                      <h2 className={style.previewWrapperContListItemContTitle}>{skill.name}</h2>
+                      <h2 className={style.previewWrapperContListItemContTitle}>
+                        {translatedMap[skill.name] || skill.name || 'Без названия'}
+                      </h2>
                       {/* <p className={style.previewWrapperContListItemContSub}>{skill["skillcd&cost"]}</p> */}
                     </div>
                     <p
                       className={style.previewWrapperContListItemSubs}
-                      dangerouslySetInnerHTML={{ __html: clearText(skill.des) }}
+                      dangerouslySetInnerHTML={{ __html: clearText(translatedMapDesk[skill.des] || skill.des) }}
                     ></p>
                   </li>
                 ))
