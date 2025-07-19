@@ -1,11 +1,13 @@
 {
 	"name": "ggenius",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
+	"homepage": "https://Nimarchik.github.io/ggenius",
+
 	"scripts": {
 		"dev": "vite",
-		"build": "vite build && cp dist/index.html dist/404.html",
+		"build": "vite build",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d dist",
 		"lint": "eslint .",
